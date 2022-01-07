@@ -72,7 +72,175 @@ A mockup of the project, displaying responsiveness.
 ---
 
 
+## User Experience -UX-
 
+### User stories
+
+  #### As a new user
+
+- As a new user, I want
+- As a new user, I want
+- As a new user, I want
+
+[Back to table of content](#table-of-content) 
+
+---
+  #### As a returning user
+
+- As a returning user, I want 
+- As a returning user, I want 
+- As a returning user, I want 
+
+[Back to table of content](#table-of-content) 
+
+---
+  #### As the site owner/admin
+
+- As the owner/admin of the website, I want
+- As the owner/admin of the website, I want
+- As the owner/admin of the website, I want 
+
+[Back to table of content](#table-of-content) 
+
+### Design
+
+  #### Colour scheme
+
+![Colour schema](--------------------------------------------)
+
+[Back to table of content](#table-of-content)
+
+---
+
+  #### Typography
+
+
+
+---
+
+  #### Wireframes
+
+Added [Wireframes](------------------) for desktop, tablet and mobile.
+
+[Back to table of content](#table-of-content)
+
+
+  #### Database schema
+
+![Diagram schema](------------------------)
+
+
+[Back to table of content](#table-of-content)
+
+---
+
+## Features
+
+### Features implemented
+
+  #### Navigation
+
+
+
+
+
+[Back to table of content](#table-of-content)
+
+---
+
+  #### Security
+
+
+
+
+
+
+
+[Back to table of content](#table-of-content)
+
+---
+
+  #### Managing data
+
+  ##### Update database
+  
+
+
+
+
+
+[Back to table of content](#table-of-content)
+
+---
+
+  ##### Delete product
+
+
+
+
+
+
+[Back to table of content](#table-of-content)
+
+---
+
+  ##### Delete product
+
+
+
+
+
+
+[Back to table of content](#table-of-content)
+
+---
+
+  #####  Add or edit product
+  
+
+
+
+
+
+[Back to table of content](#table-of-content)
+
+---
+
+  ##### Product information
+
+
+
+
+
+
+
+[Back to table of content](#table-of-content)
+
+  ##### Profile page
+
+
+
+
+
+
+
+[Back to table of content](#table-of-content)
+
+---
+
+### Future features
+
+
+
+
+
+[Back to table of content](#table-of-content)
+
+---
+
+## Technologies
+
+  ### Languages
 
 
 
@@ -80,3 +248,152 @@ A mockup of the project, displaying responsiveness.
 
 
 [Back to table of content](#table-of-content) 
+
+---
+
+  ### Libraries and frameworks
+  
+
+
+
+
+[Back to table of content](#table-of-content) 
+
+---
+
+  ### Version control, workspace, repository storage and deployment
+
+
+
+
+
+[Back to table of content](#table-of-content) 
+
+---
+
+  ### Other technologies
+
+
+
+
+
+[Back to table of content](#table-of-content)
+
+---
+
+## Testing
+
+This [testing document](------------------------------------)  contains all testing.
+
+[Back to table of content](#table-of-content)
+
+---
+
+## Deployment
+
+### Deploy to Heroku
+
+  #### Setup requirements
+
+
+
+
+
+[Back to table of content](#table-of-content)
+
+---
+
+  #### Setup Procfile
+
+
+
+[Back to table of content](#table-of-content)
+
+---
+
+### Heroku
+
+  #### Create a new Heroku application
+
+
+
+
+[Back to table of content](#table-of-content)
+
+---
+
+  #### Connecting to the GitHub repository
+
+
+
+
+
+[Back to table of content](#table-of-content)
+
+---
+
+  #### Setup the Config Vars
+
+
+
+
+
+[Back to table of content](#table-of-content)
+
+---
+
+  #### Automatic deployment
+
+
+
+
+
+[Back to table of content](#table-of-content)
+
+---
+
+### Local development
+
+  #### Forking
+
+
+
+
+
+[Back to table of content](#table-of-content)
+
+---
+
+  #### Making a local clone
+
+
+
+
+
+[Back to table of content](#table-of-content)
+
+---
+
+## Credits
+
+
+
+
+
+[Back to table of content](#table-of-content)
+
+  ---
+
+  ### Acknowledgements
+
+
+
+[Back to table of content](#table-of-content)
+
+---
+
+## Disclaimer
+
+This site was developed for educational purposes.
+
+[Back to table of content](#table-of-content)
