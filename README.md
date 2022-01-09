@@ -91,9 +91,13 @@ A mockup of the project, displaying responsiveness.
 ---
   #### As a returning user
 
-- As a returning user, I want 
-- As a returning user, I want 
-- As a returning user, I want 
+- As a returning user, I want to see if/what fabrics are on sale to find the best value for money.
+- As a returning user, I want to have free delivery above an certain order threshold to feel rewarded for larger purchases
+- As a returning user, I want to view my previous purchases to be able to make repeat orders more easily.
+- As a returning user, I want to review my basket prior to checkout to inspect quantities/products.
+- As a returning user, I want to receive confirmation of my order to have proof of purchase.
+- As a returning user, I want to save my default delivery details to proceed to the checkout more quickly in the future.
+- As a returning user, I want to leave a review and rating for fabrics to inform others about their potential buy.
 
 [Back to table of content](#table-of-content) 
 
