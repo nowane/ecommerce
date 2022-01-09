@@ -78,9 +78,13 @@ A mockup of the project, displaying responsiveness.
 
   #### As a new user
 
-- As a new user, I want
-- As a new user, I want
-- As a new user, I want
+- As a new user, I want to immediately understand the purpose of the site	to be able to decide whether to stay or not.
+- As a new user, I want to easily browse through fabrics and be able to tell how much they cost and how others have rated them.
+- As a new user, I want to create an account easily to be able to purchase products.
+- As a new user, I want to add fabrics to my shopping cart before registering to avoid having to register if not necessary.
+- As a new user, I want to be able to learn more about a specific fabric to make an informed purchase decision.
+- As a new user, I want to filter my search by different criteria to find a specific product.
+- As a new user, I want to read reviews/ratings for fabrics to make an informed purchase decision.
 
 [Back to table of content](#table-of-content) 
 
