@@ -104,9 +104,10 @@ A mockup of the project, displaying responsiveness.
 ---
   #### As the site owner/admin
 
-- As the owner/admin of the website, I want
-- As the owner/admin of the website, I want
-- As the owner/admin of the website, I want 
+- As the owner/admin of the website, I want to be able to view, add, edit and delete products to keep the products list up to date.
+- As the owner/admin of the website, I want to manage the attributes assigned to a product so I can correctly display and categorise products.
+- As the owner/admin of the website, I want to provide a secure shopping experience so the customers can confidently return to the site.
+- As the owner/admin of the website, I want to have a secure payment structure so customers can safely pay.
 
 [Back to table of content](#table-of-content) 
 
