@@ -123,9 +123,9 @@ A mockup of the project, displaying responsiveness.
 
   #### Typography
 
-Raleway - A relatively slim font used for all headers.
+[Raleway](https://fonts.google.com/specimen/Raleway?query=raleway) - A relatively slim font used for all headers.
 
-Karla - A softer and elegant font used for everything other than headings. 
+[Karla](https://fonts.google.com/specimen/Karla?query=karla) - A softer and elegant font used for everything other than headings. 
 
 ---
 
