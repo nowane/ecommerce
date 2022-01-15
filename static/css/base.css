@@ -5,3 +5,32 @@ body {
 h1,h2,h3,h4,h5,h6 {
     font-family: "Raleway", sans-serif;
 }
+
+
+
+.navbar-bg-custom {
+    background-color: #161c36 !important;
+}
+
+.nav-link, 
+.navbar > div > a {
+    color: #00f5ff !important;
+}
+
+.dropdown-menu {
+    background-color: #161c36 !important;
+}
+
+.dropdown-item {
+    color: #00f5ff !important;
+}
+
+.dropdown-item:hover {
+    color: #161c36 !important;
+    background-color: #00f5ff !important;
+    font-weight: bolder;
+}
+
+.navbar-toggler {
+    background-color: #00f5ff !important;
+}
