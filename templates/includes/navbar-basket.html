@@ -1,0 +1,10 @@
+<li class="nav-item list-inline-item d-sm">
+    <a class="nav-link" href="" aria-label="View cart">
+        {% if total %}
+            €{{ total|floatformat:2 }}
+        {% else %}
+            €0.00
+        {% endif %}
+        <i class="fas fa-shopping-basket"></i>
+    </a>
+</li>

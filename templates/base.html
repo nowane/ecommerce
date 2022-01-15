@@ -57,6 +57,11 @@
             <a class="navbar-brand" href="{% url 'home' %}">
                 <img src="{{ MEDIA_URL }}logo.png" width="150" height="100%" alt="FabricZ logo">
             </a>
+
+            <ul class="navbar-nav d-md-none mx-auto ">
+                {% include 'includes/navbar-basket.html' %}
+            </ul>
+
             <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
@@ -98,6 +103,11 @@
                     </li>
 
                 </ul>
+
+                <ul class="navbar-nav d-none d-md-inline ml-auto">
+                    {% include 'includes/navbar-basket.html' %}
+                </ul>
+
             </div>
         </nav>
 
