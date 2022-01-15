@@ -133,8 +133,13 @@ A mockup of the project, displaying responsiveness.
 
 ## Documentation of any bugs encountered and their resolution steps
 
+- When trying to add the logo to the navigation bar, the image gave a 404 error.
 
+![Error](media/testing/logo-error-1.png)
 
+- This was resolved by adding the 'django.template.context_processors.media',  to the templates in settings.py
+
+![Solution](media/testing/logo-error-solve.png)
 
 [Back to table of content](#table-of-content)
 
