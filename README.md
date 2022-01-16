@@ -284,6 +284,15 @@ Added [Wireframes](------------------) for desktop, tablet and mobile.
 
   ### Other technologies
 
+[Coolors](https://coolors.co/) - Used to create a colour schema.
+
+[Favicon](https://favicon.io/) - Used for making the favicons.
+
+[Jpg2png](https://jpg2png.com/) - Used to convert jpg to png.
+
+[Namecheap](https://www.namecheap.com/) - Used for creating the site logo.
+
+[Photopea](https://www.photopea.com/) - Used to get rid of the logo's background-colour.
 
 
 
