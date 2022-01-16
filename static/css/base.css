@@ -1,3 +1,7 @@
+html {
+    height: 100%;
+}
+
 /* FONTS */ 
 
 body {
@@ -90,5 +94,16 @@ li > a > span > i:hover {
 body {
 	background: url('/media/background.png') no-repeat center center fixed;
 	background-size: cover;
-    height: calc(100vh - 121px);
+    height: calc(100vh - 10px);
+}
+
+/* FOOTER */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
 }
