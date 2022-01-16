@@ -12,6 +12,17 @@ h1,h2,h3,h4,h5,h6 {
     color: #00f5ff;
 }
 
+/* ICONS */ 
+
+.footer-icon {
+    font-size: 1.5rem;
+    color: #00f5ff;
+}
+
+.footer-icon:hover {
+    color: #e62fff;
+}
+
 /* BORDERS */
 
 .border-btn-home {
@@ -32,7 +43,6 @@ h1,h2,h3,h4,h5,h6 {
     background-color: #e62fff;
     border: #00f5ff;
     color: #f6f8f8;
-    font-style: bold;
     transform: scale(1.3);
     box-shadow: 5px 5px 5px #000;
 }
@@ -71,5 +81,5 @@ h1,h2,h3,h4,h5,h6 {
 body {
 	background: url('/media/background.png') no-repeat center center fixed;
 	background-size: cover;
-    height: calc(100vh - 164px);
+    height: calc(100vh - 121px);
 }
