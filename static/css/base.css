@@ -72,13 +72,17 @@ li > a > span > i:hover {
 }
 
 .dropdown-item:hover {
-    color: #161c36 !important;
-    background-color: #00f5ff !important;
+    color: #00f5ff !important;
+    background-color: #e62fff !important;
     font-weight: bolder;
 }
 
 .navbar-toggler {
     background-color: #00f5ff !important;
+}
+
+.nav-link:hover {
+    color: #e62fff !important;
 }
 
 /* BACKGROUND */
