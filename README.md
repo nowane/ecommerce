@@ -274,9 +274,10 @@ Added [Wireframes](------------------) for desktop, tablet and mobile.
 
   ### Version control, workspace, repository storage and deployment
 
-
-
-
+- [Git](https://git-scm.com/) - Version control software used to commit and push code to the GitHub repository where the source code is stored.
+- [Gitpod](https://www.gitpod.io/) - Main workspace IDE (Integrated Development Environment).
+- [GitHub](https://github.com/) - Used to store the project repository and deploy the website via github pages.
+- [Heroku](https://www.heroku.com/platform) - Platform used to deploy this project.
 
 [Back to table of content](#table-of-content) 
 
