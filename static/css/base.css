@@ -1,3 +1,5 @@
+/* FONTS */ 
+
 body {
     font-family: "Karla", sans-serif;
 }
@@ -6,10 +8,10 @@ h1,h2,h3,h4,h5,h6 {
     font-family: "Raleway", sans-serif;
 }
 
-
+/* NAVIGATION BAR */
 
 .navbar-bg-custom {
-    background-color: #161c36 !important;
+    background-color: rgba(0,0,0,0)
 }
 
 .nav-link, 
@@ -33,4 +35,12 @@ h1,h2,h3,h4,h5,h6 {
 
 .navbar-toggler {
     background-color: #00f5ff !important;
+}
+
+/* BACKGROUND */
+
+body {
+	background: url('/media/background.png') no-repeat center center fixed;
+	background-size: cover;
+    height: calc(100vh - 164px);
 }
