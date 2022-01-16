@@ -15,12 +15,17 @@ h1,h2,h3,h4,h5,h6 {
 /* ICONS */ 
 
 .footer-icon {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #00f5ff;
 }
 
 .footer-icon:hover {
     color: #e62fff;
+}
+
+li > a > span > i:hover {
+    transform: scale(1.5);
+    transition: transform .5s;
 }
 
 /* BORDERS */
