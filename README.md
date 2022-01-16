@@ -264,9 +264,11 @@ Added [Wireframes](------------------) for desktop, tablet and mobile.
 
   ### Libraries and frameworks
   
-
-
-
+- [Bootstrap v5.1](https://getbootstrap.com/docs/5.1/getting-started/introduction/) - Javascript plugins and CSS toolkit used for this project.
+- [Django](https://www.djangoproject.com/) - Python web framework used for this project.
+- [Font Awesome](https://fontawesome.com/) - Icons used for this project.
+- [Google Fonts](https://fonts.google.com/) - Fonts used for this project.
+- [JQuery](https://jquery.com/) - Used to simplify DOM manipulation.
 
 [Back to table of content](#table-of-content) 
 
