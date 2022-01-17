@@ -5,6 +5,9 @@ class Category(models.Model):
     """
     A model for categories of fabrics.
     """
+    class Meta:
+        verbose_name_plural = 'Categories'
+
     name = models.CharField(max_length=50)
     friendly_name = models.CharField(max_length=50, null=True, blank=True)
 
