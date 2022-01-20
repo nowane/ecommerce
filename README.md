@@ -400,6 +400,7 @@ This [testing document](https://github.com/nowane/ecommerce/blob/main/TESTING.md
 
 ## Credits
 
+[noimage.png](https://commons.wikimedia.org/wiki/File:No-image-available.png) - Used with this linking to the license.
 
 
 
