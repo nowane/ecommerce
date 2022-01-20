@@ -41,8 +41,19 @@ li > a > span > i:hover {
 }
 
 .hr-purple {
-    border: 2px solid #e62fff;
-    border-radius: 2px;
+    border: 3px solid #e62fff;
+    border-radius: 3px;
+}
+
+.hr-purple-sm {
+    border: 1px solid #e62fff;
+}
+
+/* CARDS */
+
+.card-body,
+.card-footer {
+    background: #f6f8f8 !important;
 }
 
 /* BUTTON */
