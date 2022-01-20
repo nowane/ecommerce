@@ -27,7 +27,6 @@
                 {% for product in products %}
                     <div class="col-sm-6 col-lg-4 col-xl-3 mb-4">
                         <div class="card h-100 border-0">
-
                             {% if product.image %}
                                 <a href="">
                                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -58,30 +57,29 @@
                         </div>
                     </div>
                     {% if forloop.counter|divisibleby:1 %}
-                            <div class="col-12 d-sm-none">
-                                <hr class="hr-purple-sm mt-0 mb-4">
-                            </div>
-                        {% endif %}                        
-                        {% if forloop.counter|divisibleby:2 %}
-                            <div class="col-12 d-none d-sm-block d-md-block d-lg-none">
-                                <hr class="hr-purple-sm mt-0 mb-4">
-                            </div>
-                        {% endif %}
-                        {% if forloop.counter|divisibleby:3 %}
-                            <div class="col-12 d-none d-lg-block d-xl-none">
-                                <hr class="hr-purple-sm mt-0 mb-4">
-                            </div>
-                        {% endif %}
-                        {% if forloop.counter|divisibleby:4 %}
-                            <div class="col-12 d-none d-xl-block">
-                                <hr class="hr-purple-sm mt-0 mb-4">
-                            </div>
-                        {% endif %}
+                        <div class="col-12 d-sm-none">
+                            <hr class="hr-purple-sm mt-0 mb-4">
+                        </div>
+                    {% endif %}                        
+                    {% if forloop.counter|divisibleby:2 %}
+                        <div class="col-12 d-none d-sm-block d-md-block d-lg-none">
+                            <hr class="hr-purple-sm mt-0 mb-4">
+                        </div>
+                    {% endif %}
+                    {% if forloop.counter|divisibleby:3 %}
+                        <div class="col-12 d-none d-lg-block d-xl-none">
+                            <hr class="hr-purple-sm mt-0 mb-4">
+                        </div>
+                    {% endif %}
+                    {% if forloop.counter|divisibleby:4 %}
+                        <div class="col-12 d-none d-xl-block">
+                            <hr class="hr-purple-sm mt-0 mb-4">
+                        </div>
+                    {% endif %}
                 {% endfor %}
             </div>
         </div>
     </div>
-</div>
 </div>
 
 {% endblock %}

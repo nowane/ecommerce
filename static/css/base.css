@@ -35,7 +35,7 @@ li > a > span > i:hover {
 /* BORDERS */
 
 .border-btn-home {
-    padding: 20px;
+    padding: 40px;
     border-radius: 50px;
     height: 5px;
 }
@@ -63,6 +63,8 @@ li > a > span > i:hover {
     color: #1a213f;
     transition: transform .5s;
     box-shadow: 2px 2px 2px #000;
+    display: inline-flex;
+    align-items: center;
 }
 .btn-home:hover {
     background-color: #e62fff;
