@@ -2,14 +2,36 @@
 {% load static %}
 
 {% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col">
 
+            </div>
+        </div>
+    </div>
 {% endblock %}
 
 {% block content %}
-<div class="container h-100">
-    <div class="row h-100 text-center">
-        <div class="col-5 col-md-6">
-            {{ products }}
+<div class="bg-overlay"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col text-center mt-4">
+            <h2>Products</h2>
+            <hr class="hr-purple w-50 mb-2 mx-auto">
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="row mt-1 mb-1"></div>
+                <div class="row">
+                    {% for product in products %}
+                        <div class="col-sm-6 col-lg-4 col-xl-3">
+                            <div class="card h-100 border-0">
+                                
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
         </div>
     </div>
 </div>
