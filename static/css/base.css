@@ -2,6 +2,10 @@ html {
     height: 100%;
 }
 
+img {
+    max-height: 60vh;;
+}
+
 /* FONTS */ 
 
 body {
@@ -54,6 +58,10 @@ li > a > span > i:hover {
 .card-body,
 .card-footer {
     background: #f6f8f8 !important;
+}
+
+.content-container {
+    background: #1a213f !important;
 }
 
 /* BUTTON */
