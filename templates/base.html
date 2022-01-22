@@ -86,15 +86,9 @@
                     <li class="nav-item dropdown" id="myDropdown2">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Fabrics</a>
                         <ul class="dropdown-menu">
-                            <li> <a class="dropdown-item" href="#">Brand 1 </a></li>
-                            <li> <a class="dropdown-item" href="#">Brand 2 &raquo; </a>
-                                <ul class="submenu dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Brand sub-categorie 1</a></li>
-                                    <li><a class="dropdown-item" href="#">Brand sub-categorie 2</a></li>
-                                    <li><a class="dropdown-item" href="#">Brand sub-categorie 3</a></li>
-                                </ul>
-                            </li>
-                            <li><a class="dropdown-item" href="#">Brand 3 </a></li>
+                            <li><a href="{% url 'products' %}?category=printed_cotton" class="dropdown-item">Printed Cotton</a></li>
+                            <li><a href="{% url 'products' %}?category=silk_animal_print" class="dropdown-item">Silk Animal Prints</a></li>
+                            <li><a href="{% url 'products' %}?category=silk_floral_print" class="dropdown-item">Silk Floral Prints</a></li>
                         </ul>
                     </li>
 
