@@ -160,6 +160,28 @@ body {
     z-index: -1;
 }
 
+/* FORMS */
+
+input[type=text] {
+    background: #1a213f;
+    border-radius: 15px;
+    color: #e62fff;
+}
+
+input[type=text]:focus {
+    background-color: #f6f8f8 !important;
+}
+
+.btn-form {
+    background: #1a213f;
+    color: #e62fff;
+}
+
+.btn-form:hover {
+    background: #e62fff;
+    color: #f6f8f8;
+}
+
 /* FOOTER */
 
 body {

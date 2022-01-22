@@ -2,6 +2,19 @@
 {% load static %}
 
 {% block page_header %}
+    <div class="container">
+        <form method="GET" action="{% url 'products' %}">
+            <div class="input-group">
+                <input type="text" class="form-control text-center" name="q" placeholder="Find your style" autocomplete="off">
+                <span class="input-group-append">
+                    <button class="btn btn-form border" type="submit" aria-label="search">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+            </div>
+        </form>
+    </div>
+
     <div class="container header-container">
         <div class="row">
             <div class="col">
