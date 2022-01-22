@@ -72,18 +72,25 @@
             </button>
             <div class="collapse navbar-collapse" id="main_nav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item active"> <a class="nav-link" href="{% url 'products' %}">All Products</a></li>
+                    <li class="nav-item dropdown active" id="myDropdown1">
+                        <a class="nav-link dropdown-toggle" href="{% url 'products' %}" data-bs-toggle="dropdown">All Products</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">Sort By Price</a></li>
+                            <li><a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">Sort By Fabric</a></li>
+                            <li><a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item">Sort By Rating</a></li>
+                        </ul>
+                    </li>
 
-                    <li class="nav-item dropdown" id="myDropdown1">
+                    <li class="nav-item dropdown" id="myDropdown2">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Sale</a>
-                        <ul class="submenu dropdown-menu">
+                        <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Brand 1</a></li>
                             <li><a class="dropdown-item" href="#">Brand 2</a></li>
                             <li><a class="dropdown-item" href="#">Brand 3</a></li>
                         </ul>
                     </li>
 
-                    <li class="nav-item dropdown" id="myDropdown2">
+                    <li class="nav-item dropdown" id="myDropdown3">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Fabrics</a>
                         <ul class="dropdown-menu">
                             <li><a href="{% url 'products' %}?category=printed_cotton" class="dropdown-item">Printed Cotton</a></li>
@@ -92,9 +99,9 @@
                         </ul>
                     </li>
 
-                    <li class="nav-item dropdown" id="myDropdown3">
+                    <li class="nav-item dropdown" id="myDropdown4">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Account</a>
-                        <ul class="submenu dropdown-menu">
+                        <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Register</a></li>
                             <li><a class="dropdown-item" href="#">Log In</a></li>
                         </ul>
