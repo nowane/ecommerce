@@ -77,6 +77,20 @@ li > a > span > i:hover {
     box-shadow: inset 2px 3px 5px #000000, 0px 1px 1px #333;
 }
 
+.img-zoom {
+    overflow: hidden;
+    transform-origin: 50% 80%;
+    transition: transform 2s, filter 1s ease-in;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-zoom:hover {
+    overflow: hidden;
+    transform: scale(1.05);
+}
+
 /* BUTTON */
 
 .btn-home {
