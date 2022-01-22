@@ -64,6 +64,19 @@ li > a > span > i:hover {
     background: #1a213f !important;
 }
 
+.card { 
+    background: rgba(0,0,0,0);
+}
+
+/* IMAGES */
+
+.img-shadow {
+    display:inline-block;
+    padding: 10px 15px;
+    border-radius: 20px;
+    box-shadow: inset 2px 3px 5px #000000, 0px 1px 1px #333;
+}
+
 /* BUTTON */
 
 .btn-home {

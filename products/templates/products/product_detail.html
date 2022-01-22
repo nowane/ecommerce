@@ -20,7 +20,7 @@
                 <div class="product-image-container mb-3 mb-md-5 mt-3 mt-md-5">
                     {% if product.image %}
                         <a href="{{ product.image.url }}" target="_blank">
-                            <img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
+                            <img class="card-img-top img-shadow" src="{{ product.image.url }}" alt="{{ product.name }}">
                         </a>
                     {% else %}
                         <a href="">
@@ -33,7 +33,7 @@
             <div class="col-12 col-sm-6 col-lg-4">
                 <div class="product-detail-container mb-3 mb-md-5 mt-3 mt-md-5">
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body img-shadow">
                             <h4 class="mb-0">{{ product.name }}</h4>
                             <p class="mb-0 text-left font-weight-bold">€{{ product.price }}</p>
                             {% if product.rating %}
