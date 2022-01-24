@@ -20,6 +20,14 @@ h1,h2,h3,h4,h5,h6 {
     color: #00f5ff;
 }
 
+.text-blue {
+    color: #00f5ff !important;
+}
+
+.text-purple {
+    color:#e62fff !important;
+}
+
 /* ICONS */ 
 
 .footer-icon {
@@ -213,6 +221,13 @@ input[type=text]:focus {
 .btn-form:hover {
     background: #e62fff;
     color: #f6f8f8;
+}
+
+/* SELECTORS */
+
+select {
+    background: #1a213f;
+    color: #00f5ff;
 }
 
 /* FOOTER */
