@@ -37,17 +37,8 @@
     {% endblock %}
 
     {% block corejs %}
-        <!-- Bootstrap scripts-->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
-        </script>
-        <script src="{% static 'js/base.js' %}"></script>
-    {% endblock %}
-
-    {% block extra_js %}
+        <!-- Jquery -->    
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
     {% endblock %}
 
     <title>FabricZ {% block extra_title %}{% endblock %}</title>
@@ -75,6 +66,7 @@
                     <li class="nav-item dropdown active" id="myDropdown1">
                         <a class="nav-link dropdown-toggle" href="{% url 'products' %}" data-bs-toggle="dropdown">All Products</a>
                         <ul class="dropdown-menu">
+                            <li><a href="{% url 'products' %}" class="dropdown-item">All Products</a></li>
                             <li><a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">Sort By Price</a></li>
                             <li><a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">Sort By Fabric</a></li>
                             <li><a href="{% url 'products' %}?sort=average_rating&direction=desc" class="dropdown-item">Sort By Rating</a></li>
@@ -130,8 +122,6 @@
         {% endblock %}
     </div>
 
-    {% block postloadjs %}
-    {% endblock %}
 
     <footer class="footer pt-3">
         <div class="container-fluid">
@@ -171,6 +161,17 @@
             </div>
         </div>
     </footer>
+
+    {% block postloadjs %}
+        <!-- Bootstrap scripts-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <!-- Own scripts -->
+        <script src="{% static 'js/base.js' %}"></script>    
+    {% endblock %}
+
+    {% block extra_js %}
+    {% endblock %}
 
 </body>
 

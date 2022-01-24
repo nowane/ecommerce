@@ -109,6 +109,7 @@ li > a > span > i:hover {
     display: inline-flex;
     align-items: center;
 }
+
 .btn-home:hover {
     background-color: #e62fff;
     border: #00f5ff;
