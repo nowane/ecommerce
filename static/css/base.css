@@ -225,3 +225,21 @@ body {
 .content {
     flex: 1 0 auto;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 992px) {
+    #toTop {
+        bottom: 20px; 
+        right: 30px; 
+        font-size: 2.5rem;
+      }
+  }
+
+@media screen and (max-width: 576px) {
+    #toTop {
+        font-size: 2rem;
+        bottom: 20px; 
+        right: 20px; 
+      }
+  }
