@@ -1,5 +1,5 @@
 <li class="nav-item list-inline-item d-sm">
-    <a class="nav-link" href="" aria-label="View cart">
+    <a class="nav-link" href="{% url 'view_bag' %}" aria-label="View shopping bag">
         {% if total %}
             €{{ total|floatformat:2 }}
         {% else %}

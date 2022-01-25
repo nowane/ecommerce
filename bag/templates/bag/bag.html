@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="bg-overlay"></div>
+
+    <div class="content-container">
+        <div class="row">
+            <div class="col">
+                <hr class="hr-purple w-50">
+                    <h3 class="mb-3">Shopping Bag Content</h3>
+                <hr class="hr-purple w-50">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                {% if bag_items %}
+                    <div class="table-responsive rounded"></div>
+                {% else %}
+                    <p class="mb-4">No items were added.</p>
+                    <a href="{% url 'products' %}" class="btn btn-lg rounded btn-bag">
+                        <span class="icon">
+                            <i class="fas fa-angle-double-left"></i>
+                        </span>
+                        <span class="text-capitalize">Keep Shopping</span>
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container">
+    <div class="container header-container">
         <form method="GET" action="{% url 'products' %}">
             <div class="input-group">
                 <input type="text" class="form-control text-center" name="q" placeholder="Find your style" autocomplete="off">
@@ -13,14 +13,6 @@
                 </span>
             </div>
         </form>
-    </div>
-
-    <div class="container header-container">
-        <div class="row">
-            <div class="col">
-
-            </div>
-        </div>
     </div>
 {% endblock %}
 
