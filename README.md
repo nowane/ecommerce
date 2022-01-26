@@ -6,12 +6,12 @@ This is the fourth milestone project in obtaining a **Full-Stack Web Development
 
 The required main technologies for this project are **HTML**, **CSS**, **Javascript**, **Python** + **Django**, using a relational database (MySQL or Postgres) and using Stripe payments. To improve the overall quality and user experience of the site other technologies were used as well. The full list of technologies used can be found in the technologies section of this document. 
 
-------------Ecommerce is a -------------
+Ecommerce - FabricZ is designed for people who take great pride and joy creating their own clothing. It is our goal to facilitate those people, supplying them with the best quality materials and the most beautiful fabrics. The goal is to build a loyal and growing base of customers, who can easily and intuitively navigate the site prodiving them a positive user experience.  
 
 **Please note: To open any links in this document in a new browser tab, please press CTRL + Click.**
 
 
-View live website [here](-----------------------------------)
+View live website [here](https://fabricz.herokuapp.com/)
 
 ---
 
