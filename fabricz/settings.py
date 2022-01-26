@@ -26,12 +26,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = os.environ.get("DEVELOPMENT", True)
 
-ALLOWED_HOSTS = [
-    'fabricz.herokuapp.com',
-    'localhost',
-]
+ALLOWED_HOSTS = ['fabricz.herokuapp.com', 'localhost']
 
 # Application definition
 
@@ -122,7 +119,7 @@ else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
 
