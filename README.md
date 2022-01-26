@@ -48,6 +48,7 @@ A mockup of the project, displaying responsiveness.
       - [Profile page](#profile-page)
     - [Future features](#future-features)
 - [Technologies](#technologies)
+  - [Databases](#databases)
   - [Languages](#languages)
   - [Libraries and frameworks](#libraries-and-frameworks)
   - [Version control, workspace, repository storage and deployment](#version-control,-workspace,-repository-storage-and-deployment)
@@ -247,6 +248,11 @@ Added [Wireframes](------------------) for desktop, tablet and mobile.
 
 ## Technologies
 
+  ### Databases
+
+- [SQLite](https://www.sqlite.org/index.html) - Used as the database for the creation and development of this project.
+- [Heroku Postgres](https://www.heroku.com/postgres) - Used as the database for this project in production mode after deployment to Heroku.
+
   ### Languages
 
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - Used to style and colour HTML as well as dynamic elements.
@@ -273,6 +279,7 @@ Added [Wireframes](------------------) for desktop, tablet and mobile.
 
   ### Version control, workspace, repository storage and deployment
 
+- [AWS](https://aws.amazon.com/) (S3) - Used to store the sites staticfiles.
 - [Git](https://git-scm.com/) - Version control software used to commit and push code to the GitHub repository where the source code is stored.
 - [Gitpod](https://www.gitpod.io/) - Main workspace IDE (Integrated Development Environment).
 - [GitHub](https://github.com/) - Used to store the project repository and deploy the website via github pages.
@@ -284,17 +291,19 @@ Added [Wireframes](------------------) for desktop, tablet and mobile.
 
   ### Other technologies
 
-[Coolors](https://coolors.co/) - Used to create a colour schema.
+- [Balsamiq](https://balsamiq.com/wireframes/) - Used to make wireframes.
 
-[Favicon](https://favicon.io/) - Used for making the favicons.
+- [Coolors](https://coolors.co/) - Used to create a colour schema.
 
-[Jpg2png](https://jpg2png.com/) - Used to convert jpg to png.
+- [Favicon](https://favicon.io/) - Used for making the favicons.
 
-[Namecheap](https://www.namecheap.com/) - Used for creating the site logo.
+- [Jpg2png](https://jpg2png.com/) - Used to convert jpg to png.
 
-[Photopea](https://www.photopea.com/) - Used to get rid of the logo's background-colour.
+- [Namecheap](https://www.namecheap.com/) - Used for creating the site logo.
 
+- [Photopea](https://www.photopea.com/) - Used to get rid of the logo's background-colour.
 
+- [StackOverflow](https://stackoverflow.com/) - Used as a general reference resource. 
 
 
 [Back to table of content](#table-of-content)
@@ -560,7 +569,7 @@ AWS_ACCESS_KEY_ID
 AWS_SECRET_ACCESS_KEY
 ```
 - Delete the `DISABLE_COLLECTSTATIC` variable from your Config Vars and deploy your Heroku app.
-- With the S3 bucket set up, you can create a new folder called `media` at the same level as the newly added `static` folder. Manually upload any required media files to it, ensure they are publicly accessible under **Permissions**.
+- With the S3 Bucket set up, you can create a new folder called `media` at the same level as the newly added `static` folder. Manually upload any required media files to it, ensure they are publicly accessible under **Permissions**.
 
 </details>
 
