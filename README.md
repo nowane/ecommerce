@@ -379,6 +379,7 @@ python3 manage.py runserver
 ```
 </details>
 
+
 <p>
 <details>
 <summary>How to deploy to Heroku</summary>
@@ -457,60 +458,52 @@ git push
 </details>
 
 
+<details>
+<summary>Setting up an AWS S3 Bucket</summary>
+<p>
 
+- Create an [Amazon AWS](aws.amazon.com) account.
+- Search for **S3** and create a new bucket.
+  - Allow public access.
+  - Acknowledge.
+- Under **Properties > Static** website hosting.
+  - Enable.
+  - Index.html as index document.
+  - Save.
+- Under **Permissions > CORS** use:
+```
+[
+  {
+      "AllowedHeaders": [
+          "Authorization"
+      ],
+      "AllowedMethods": [
+          "GET"
+      ],
+      "AllowedOrigins": [
+          "*"
+      ],
+      "ExposeHeaders": []
+  }
+]
+```
+- Under **Permissions > Bucket Policy**:
+  - Generate Bucket Policy and take note of **Bucket ARN**.
+  - Chose **S3 Bucket Policy** as Type of Policy.
+  - For **Principal**, enter `*` .
+  - Enter **ARN** noted above.
+  - **Add Statement**.
+  - **Generate Policy**.
+  - Copy **Policy JSON Document**.
+  - Paste the policy into **Edit Bucket policy** on the previous tab.
+  - Save changes.
 
+- Under **Access Control List (ACL)**:
+  - For **Everyone (public access)**, check **List**.
+  - Accept that everyone in the world may access the Bucket.
+  - Save changes.
 
-
-
-[Back to table of content](#table-of-content)
-
----
-
-  #### Connecting to the GitHub repository
-
-
-
-
-
-[Back to table of content](#table-of-content)
-
----
-
-  #### Setup the Config Vars
-
-
-
-
-
-[Back to table of content](#table-of-content)
-
----
-
-  #### Automatic deployment
-
-
-
-
-
-[Back to table of content](#table-of-content)
-
----
-
-### Local development
-
-  #### Forking
-
-
-
-
-
-[Back to table of content](#table-of-content)
-
----
-
-  #### Making a local clone
-
-
+</details>
 
 
 
