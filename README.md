@@ -30,7 +30,7 @@ A mockup of the project, displaying responsiveness.
     - [As a returning user](#as-a-returning-user)
     - [As the site owner/admin](#as-the-site-owner/admin)
   - [Design](#design)
-    - [Colour schema](#colour-schema)
+    - [Colour scheme](#colour-scheme)
     - [Typography](#typography)
     - [Styling](#styling)
     - [Wireframes](#wireframes)
@@ -115,7 +115,14 @@ A mockup of the project, displaying responsiveness.
 
   #### Colour scheme
 
-![Colour schema](--------------------------------------------)
+  The main colours used for the site are as follows
+
+![Colour scheme](https://github.com/nowane/ecommerce/blob/main/media/coolors.png/)
+
+- Two darker shades of blue are used for for background.
+- The light blue is used mostly for text, headers and links. 
+- Purple is used throughout the site for buttons and links that can be clicked, as well as when hoovering over an element.
+- The white/gray is used for the search form when active, as well as a background for places in need of some extra contrast.
 
 [Back to table of content](#table-of-content)
 
