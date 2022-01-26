@@ -379,21 +379,85 @@ python3 manage.py runserver
 ```
 </details>
 
-[Back to table of content](#table-of-content)
+<p>
+<details>
+<summary>How to deploy to Heroku</summary>
+<p>
 
----
+To deploy the app to Heroku from its [GitHub repository](https://github.com/nowane/ecommerce):
+- **Log In** to [Heroku](https://id.heroku.com/login).
+- Select **Create new app** from the dropdown in the dashboard.
+- Choose a unique name for the app and the location closest by.
+- Under **Resources** add **Heroku Postgres** to your app.
+- In your CLI install **dj_database_url** and **psycopg2** so you can use Postgres on your deployed site.
+```
+pip3 install dj_database_url
+pip3 install psycopg2
+```
+- Log into Heroku via the CLI.
+```
+heroku login -i
+```
+- Migrate the database into Postgres.
+```
+heroku run python manage.py migrate
+```
+- Create a new superuser and fill in your details:
+```
+python manage.py createsuperuser
+```
+- Install gunicorn.
+```
+pip3 install gunicorn
+```
+- Freeze the app's requirements.
+```
+pip3 freeze > requirements.txt
+```
+- Create a **Procfile** and include the following, making sure not to leave a blank line after it:
+```
+web: gunicorn fabricz.wsgi:application
+```
+- Temporarily disable Heroku's static file collection.
+```
+heroku config:set DISABLE_COLLECTSTATIC=1 --app fabricz
+```
+- Add the hostname of your Heroku app to settings.py.
+```
+ALLOWED_HOSTS = ['fabricz.herokuapp.com', 'localhost']
+```
+- Back in Heroku, select the **Deploy** tab and under **Deployment method** choose GitHub.
+- In **Connect to GitHub** enter your repository details and click **Connect**.
+- Go to the **Settings** tab and under **Config Vars** choose **Reveal Config Vars**.
+- Enter the following keys and values, some of which will differ from those in your env.py:
 
-  #### Setup Procfile
+|**Key**|**Value**|
+|:-----|:-----|
+|AWS_ACCESS_KEY_ID|`<Your Variable>`|
+|AWS_SECRET_ACCESS_KEY|`<Your Variable>`|
+|DATABASE_URL|`<Added when Postgres is installed>`|
+|DISABLE_COLLECTSTATIC|`1` (deleted later on)|
+|EMAIL_HOST_PASS|`<Your Variable>`|
+|EMAIL_HOST_USER|`<Your Variable>`|
+|SECRET_KEY|`<Your Variable>`|
+|STRIPE_PUBLIC_KEY|`<Your Variable>`|
+|STRIPE_SECRET_KEY|`<Your Variable>`|
+|STRIPE_WH_SECRET|`<Different from env.py>`|
+|USE_AWS|True|
+
+- Go back to the **Deploy** tab and under **Automatic deploys** choose **Enable Automatic Deploys**.
+- Back in your GitPod CLI add, commit and push your changes and Heroku will automatically deploy your app.
+```
+git add .
+git commit -m "Initial commit"
+git push
+```
+- The deployed site can be launched by clicking **Open App** from the Heroku page.
+
+</details>
 
 
 
-[Back to table of content](#table-of-content)
-
----
-
-### Heroku
-
-  #### Create a new Heroku application
 
 
 
