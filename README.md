@@ -506,6 +506,41 @@ git push
 </details>
 
 
+<p>
+<details>
+<summary>Setting up AWS Identity and Access Management</summary>
+<p>
+
+- From the **IAM dashboard** within AWS, select **User Groups**:
+  - Create new group e.g. `manage-fabricz` .
+  - Click through without adding a policy.
+  - **Create Group**.
+- Select **Policies**:
+  - Create policy.
+  - Under **JSON** tab, click **Import managed policy**.
+  - Choose **AmazongS3FullAccess**.
+  - Edit resource to include the **Bucket ARN** noted earlier when creating the Bucket Policy:
+```
+"Resource": [
+  "arn:aws:s3:::fabricz",
+  "arn:aws:s3:::fabricz/*"
+]
+```
+  - Click **next step** and go to **Review policy**.
+  - Give the policy a name e.g. `fabricz-policy` and description.
+  - **Create policy**.
+- Go back to **User Groups** and choose the group created earlier.
+  - Under **Permissions > Add permissions**, choose **Attach Policies** and select the one just created.
+  - **Add permissions**.
+- Under **Users**:
+  - Choose a user name e.g. `fabricz-staticfiles-user` .
+  - Select **Programmatic access** as the **Access type**.
+  - Click Next.
+  - Add the user to the Group just created.
+  - Click Next and **Create User**.
+- **Download the `.csv` containing the access key and secret access key. This will NOT be available to download again.**
+
+</details>
 
 [Back to table of content](#table-of-content)
 
