@@ -115,9 +115,9 @@ A mockup of the project, displaying responsiveness.
 
   #### Colour scheme
 
-  The main colours used for the site are as follows
+  The main colours used for the site are as follows:
 
-![Colour scheme](https://github.com/nowane/ecommerce/blob/main/media/coolors.png/)
+![Colour scheme](https://github.com/nowane/ecommerce/blob/main/media/coolors.png)
 
 - Two darker shades of blue are used for for background.
 - The light blue is used mostly for text, headers and links. 
