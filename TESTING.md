@@ -16,7 +16,7 @@
     - [Testing as a new user](#testing-as-a-new-user)
     - [Testing as a returning user](#testing-as-a-returning-user)
 - [Documentation of any bugs encountered and their resolution steps](#documentation-of-any-bugs-encountered-and-their-resolution-steps)
-- [Documentation of any open bugs](#documentation-of-any-open-bugs)
+- [Documentation of any open bugs and other things](#documentation-of-any-open-bugs-and-other-things)
 
 ---
 
@@ -148,17 +148,17 @@ A mockup of the project, displaying responsiveness.
 ![Error](media/testing/local-css-404.png)
 
 - Checked for typo's in links / checked file paths [like suggested here](https://stackoverflow.com/questions/48248832/stylesheet-not-loaded-because-of-mime-type)
-- Tried adding ```<base href="/">``` in the head before any styling links, like suggested here and at other sites as well.
+- Tried adding `<base href="/">` in the head before any styling links, like suggested here and at other sites as well.
 
-- Eventually solved by setting ```DEBUG = os.environ.get("DEVELOPMENT", True)``` 
+- Eventually solved by setting `DEBUG = os.environ.get("DEVELOPMENT", True)`
 
 [Back to table of content](#table-of-content)
 
 ---
 
-## Documentation of any open bugs 
+## Documentation of any open bugs and other things
 
-
+- Aware of the fact products.json got commited to GitHub - no user information was involved.
 
 
 [Back to table of content](#table-of-content)
