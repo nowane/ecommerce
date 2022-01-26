@@ -143,6 +143,17 @@ A mockup of the project, displaying responsiveness.
 
 [Back to table of content](#table-of-content)
 
+- After the site was deployed to Heroku, and all static files got to run via Amazons S3 Bucket, the local site gave 404-errors when loading CSS and JS links. The deployed website however functioned as intended. 
+
+![Error](media/testing/local-css-404.png)
+
+- Checked for typo's in links / checked file paths [like suggested here](https://stackoverflow.com/questions/48248832/stylesheet-not-loaded-because-of-mime-type)
+- Tried adding ```<base href="/">``` in the head before any styling links, like suggested here and at other sites as well.
+
+- Eventually solved by setting ```DEBUG = os.environ.get("DEVELOPMENT", True)``` 
+
+[Back to table of content](#table-of-content)
+
 ---
 
 ## Documentation of any open bugs 
