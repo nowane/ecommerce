@@ -542,9 +542,29 @@ git push
 
 </details>
 
-[Back to table of content](#table-of-content)
 
----
+<p>
+<details>
+<summary>Connecting Django to AWS S3</summary>
+<p>
+
+- Install boto3 and django-storages.
+```
+pip3 install boto3
+pip3 install django-storages
+pip3 freeze > requirements.txt
+```
+- Add the values from the `.csv` you downloaded to your Heroku Config Vars under settings:
+```
+AWS_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY
+```
+- Delete the `DISABLE_COLLECTSTATIC` variable from your Config Vars and deploy your Heroku app.
+- With the S3 bucket set up, you can create a new folder called `media` at the same level as the newly added `static` folder. Manually upload any required media files to it, ensure they are publicly accessible under **Permissions**.
+
+</details>
+
+[Back to table of content](#table-of-content)
 
 ## Credits
 
