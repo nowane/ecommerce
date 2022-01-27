@@ -154,6 +154,14 @@ A mockup of the project, displaying responsiveness.
 
 [Back to table of content](#table-of-content)
 
+- When adding a product in the card with a quantity if less than 1 metre, the following error occurs.
+
+![Error](media/testing/add-to-bag-error.png)
+
+- Solved by
+
+[Back to table of content](#table-of-content)
+
 ---
 
 ## Documentation of any open bugs and other things
