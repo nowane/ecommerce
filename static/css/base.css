@@ -155,6 +155,20 @@ transition: transform .5s;
     font-weight: bold;
 }
 
+.btn-product {
+    border-radius: 10px;
+    color: #00f5ff;
+    background: #161C36;
+}
+
+.btn-product:hover {
+    color: #f6f8f8;
+    background: #E62FFF;
+    transform: scale(1.05);
+    transition: transform .5s;
+    font-weight: bold;
+}
+
 .badge-custom {
     color: #00f5ff;
 }
@@ -185,7 +199,7 @@ transition: transform .5s;
 .dropdown-item:hover {
     color: #00f5ff !important;
     background-color: #e62fff !important;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .navbar-toggler {
