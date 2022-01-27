@@ -158,7 +158,7 @@ A mockup of the project, displaying responsiveness.
 
 ![Error](media/testing/add-to-bag-error.png)
 
-- Solved by
+- Solved by using float() instead if int() to be able to use a decimal value.
 
 [Back to table of content](#table-of-content)
 
