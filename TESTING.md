@@ -158,7 +158,14 @@ A mockup of the project, displaying responsiveness.
 
 ![Error](media/testing/add-to-bag-error.png)
 
-- Solved by using float() instead if int() to be able to use a decimal value.
+- ~~Solved by using float() instead if int() to be able to use a decimal value.~~ 
+
+- After adjusting the contexts.py file to iterate through and show the bag items, the following error occured because of different operand types used.
+
+![Error](media/testing/float-decimal-error-1.png)
+![Error](media/testing/float-decimal-error-2.png)
+
+- 
 
 [Back to table of content](#table-of-content)
 
