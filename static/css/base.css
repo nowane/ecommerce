@@ -51,12 +51,6 @@ li > a > span > i:hover {
 
 /* BORDERS */
 
-.border-btn-home {
-    padding: 40px;
-    border-radius: 50px;
-    height: 5px;
-}
-
 .border-blue {
     border: 1px solid #00f5ff;
 }
@@ -126,6 +120,8 @@ li > a > span > i:hover {
     align-items: center;
     font-family: "Raleway";
     transition: all 0.5s ease-in-out;
+    padding: 20px;
+    border-radius: 50px;
 }
 
 .btn-home:hover {
