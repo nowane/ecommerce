@@ -107,6 +107,10 @@ li > a > span > i:hover {
     transform: scale(1.05);
 }
 
+.img-rounded {
+    border-radius: 20px;
+}
+
 /* BUTTON */
 
 .btn-home {
@@ -167,6 +171,19 @@ transition: transform .5s;
     transform: scale(1.05);
     transition: transform .5s;
     font-weight: bold;
+}
+
+.btn-checkout {
+    color: #E62FFF;
+    background: #00F5FF;
+    font-weight: bold;
+}
+
+.btn-checkout:hover {
+    color: #00F5FF;
+    background: #E62FFF;
+    transform: scale(1.1);
+    transition: transform .5s;
 }
 
 .badge-custom {
