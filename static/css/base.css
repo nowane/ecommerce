@@ -29,6 +29,10 @@ h1,h2,h3,h4,h5,h6 {
     color:#e62fff !important;
 }
 
+.text-bold {
+    font-weight: 700;
+}
+
 /* ICONS */ 
 
 .footer-icon {
@@ -116,18 +120,18 @@ li > a > span > i:hover {
 
 .btn-home {
     background-color: #00f5ff;
-    color: #1a213f;
-    transition: transform .5s;
+    color: #e62fff;
     box-shadow: 2px 2px 2px #000;
     display: inline-flex;
     align-items: center;
+    font-family: "Raleway";
+    transition: all 0.5s ease-in-out;
 }
 
 .btn-home:hover {
-    background-color: #e62fff;
-    border: #00f5ff;
-    color: #f6f8f8;
-    transform: scale(1.3);
+    background: #e62fff;
+    color: #00f5ff;
+    transform: scale(1.2);
     box-shadow: 5px 5px 5px #000;
 }
 
