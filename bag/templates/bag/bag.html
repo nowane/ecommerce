@@ -13,9 +13,9 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <hr class="hr-purple w-50">
-                    <h3 class="mb-3">Shopping Bag Content</h3>
-                <hr class="hr-purple w-50">
+                <hr class="hr-purple w-50 mx-auto">
+                    <h3 class="mb-3 text-center text-bold">Shopping Bag Content</h3>
+                <hr class="hr-purple mx-auto">
             </div>
         </div>
         <div class="row">
@@ -25,18 +25,18 @@
                         <table class="table table-sm table-borderless">
                             <thead class="text-blue">
                                 <tr>
-                                    <th scope="col">Product Info</th>
+                                    <th scope="col"><u>Product Info</u></th>
                                     <th scope="col"></th>
-                                    <th scope="col">Price</th>
-                                    <th scope="col">Quantity</th>
-                                    <th scope="col">Subtotal</th>
+                                    <th scope="col"><u>Price</th>
+                                    <th scope="col"><u>Quantity</u></th>
+                                    <th scope="col"><u>Subtotal</u></th>
                                 </tr>
                             </thead>
 
                             {% for item in bag_items %}
                                 <tr class="text-blue">
                                     <td class="p-3 w-25">
-                                        <img class="img-fluid img-rounded img-shadow img-zoom" src="{{ item.product.image.url }}">
+                                        <img class="img-fluid img-thumbnail img-rounded img-shadow img-zoom" src="{{ item.product.image.url }}">
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0"><strong>{{ item.product.name }}</strong></p>

@@ -5,8 +5,8 @@
     <div class="container header-container">
         <div class="row">
             <div class="col">
-                <h3 class="text-center mt-4">Product detail</h3>
-                <hr class="hr-purple w-25 mb-4 mx-auto">
+                <h3 class="text-center mt-2 text-bold">Product Detail</h3>
+                <hr class="hr-purple w-25 mb-3 mx-auto">
             </div>
         </div>
     </div>
@@ -20,7 +20,7 @@
                 <div class="product-image-container mb-3 mb-md-5 mt-3 mt-md-5 img-zoom">
                     {% if product.image %}
                         <a href="{{ product.image.url }}" target="_blank">
-                            <img class="card-img-top img-shadow" src="{{ product.image.url }}" alt="{{ product.name }}">
+                            <img class="card-img-top img-shadow img-thumbnail" src="{{ product.image.url }}" alt="{{ product.name }}">
                         </a>
                     {% else %}
                         <a href="">
@@ -34,7 +34,7 @@
                 <div class="product-detail-container mb-3 mb-md-5 mt-3 mt-md-5">
                     <div class="card">
                         <div class="card-body img-shadow">
-                            <h4 class="mb-0">{{ product.name }}</h4>
+                            <p class="h3 mb-0">{{ product.name }}</p>
                             <p class="mb-0 text-left font-weight-bold">€{{ product.price }}</p>
                             {% if product.average_rating %}
                                 <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.average_rating }} / 5</small>
