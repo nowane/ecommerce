@@ -163,9 +163,14 @@ A mockup of the project, displaying responsiveness.
 - After adjusting the contexts.py file to iterate through and show the bag items, the following error occured because of different operand types used.
 
 ![Error](media/testing/float-decimal-error-1.png)
+
 ![Error](media/testing/float-decimal-error-2.png)
 
-- 
+- Solved by making `quantity = Decimal(request.POST.get('quantity'))` in views.py and `total += Decimal(quantity) * product.price` in contexts.py. 
+
+- However when adding to bag the following error occured: "TypeError at /bag/add/1/ Object of type Decimal is not JSON serializable".
+
+![Error](media/testing/json-serialize.png)
 
 [Back to table of content](#table-of-content)
 
@@ -173,7 +178,7 @@ A mockup of the project, displaying responsiveness.
 
 ## Documentation of any open bugs and other things
 
-- Aware of the fact products.json got commited to GitHub - no user information was involved.
+- Aware of the fact products.json got commited to GitHub - no user information was committed to GitHub.
 
 
 [Back to table of content](#table-of-content)
