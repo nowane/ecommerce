@@ -191,6 +191,16 @@ transition: transform .5s;
     transition: transform .5s;
 }
 
+.btn-quantity {
+    background: #161C36;
+    color: #00f5ff;
+}
+
+.btn-quantity:hover {
+    background: #e62fff;
+    color: #f6f8f8;
+}
+
 .badge-custom {
     color: #00f5ff;
 }
