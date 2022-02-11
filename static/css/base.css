@@ -209,6 +209,16 @@ transition: transform .5s;
     color: #e62fff;
 }
 
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
+.update-link:hover,
+.remove-item:hover {
+    color: #e62fff !important;
+}
+
 /* NAVIGATION BAR */
 
 .navbar-bg-custom {

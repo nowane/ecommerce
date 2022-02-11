@@ -119,7 +119,7 @@
                             </div>
                         {% else %}
                             <p class="mb-4">No items were added.</p>
-                            <a href="{% url 'products' %}" class="btn btn-lg rounded btn-bag">
+                            <a href="{% url 'products' %}" class="btn btn-lg rounded btn-bag mb-2">
                                 <span class="icon">
                                     <i class="fas fa-angle-double-left"></i>
                                 </span>
@@ -131,4 +131,10 @@
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+    {% include 'products/includes/quantity_input_script.html' %}
+    {% include 'bag/includes/update_quantity.html' %}
 {% endblock %}
