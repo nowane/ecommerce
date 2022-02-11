@@ -110,6 +110,10 @@ li > a > span > i:hover {
     border-radius: 20px;
 }
 
+.img-thumbnail {
+    background: #F6F8F8;
+}
+
 /* BUTTON */
 
 .btn-home {
@@ -302,4 +306,8 @@ body {
         bottom: 20px; 
         right: 20px; 
       }
+    .img-thumbnail {
+        padding: .2rem !important;
+        margin: .2rem !important;
+    }
   }
