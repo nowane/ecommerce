@@ -330,6 +330,7 @@ body {
     .form-input-small {
         margin: auto;
     }
+}
 
 @media screen and (max-width: 576px) {
     #toTop {
@@ -342,4 +343,4 @@ body {
         padding: .2rem !important;
         margin: .2rem !important;
     }
-  }
+}
