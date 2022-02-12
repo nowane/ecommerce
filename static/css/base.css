@@ -292,6 +292,10 @@ input[type=text]:focus {
     color: #f6f8f8;
 }
 
+.qty_input {
+    text-align: center;
+}
+
 /* SELECTORS */
 
 select {
@@ -318,14 +322,22 @@ body {
         right: 30px; 
         font-size: 2.5rem;
       }
-  }
+
+    .center-small{
+        text-align: center;
+    }
+
+    .form-input-small {
+        margin: auto;
+    }
 
 @media screen and (max-width: 576px) {
     #toTop {
         font-size: 2rem;
         bottom: 20px; 
-        right: 20px; 
+        right: 20px;
       }
+
     .img-thumbnail {
         padding: .2rem !important;
         margin: .2rem !important;
