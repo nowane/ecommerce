@@ -303,6 +303,15 @@ select {
     color: #00f5ff;
 }
 
+/* TOASTS */ 
+
+.message-container {
+    z-index: 1000;
+    position: fixed;
+    top: 100px;
+    right: 100px;
+}
+
 /* FOOTER */
 
 body {
