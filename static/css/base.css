@@ -92,6 +92,14 @@ li > a > span > i:hover {
     box-shadow: inset 2px 3px 5px #000000, 0px 1px 1px #333;
 }
 
+.img-shadow-bag {
+    display:inline-block;
+    padding: 2px 2px;
+    margin: 2px;
+    border-radius: 16px;
+    box-shadow: inset 1px 2px 3px #000000, 0px 1px 1px #333;
+}
+
 .img-zoom {
     overflow: hidden;
     transform-origin: 50% 80%;
@@ -164,6 +172,19 @@ transition: transform .5s;
     font-weight: bold;
 }
 
+.btn-bag-toast {
+    background: #161C36;
+    color: #00f5ff;
+    font-weight: bold;
+}
+
+.btn-bag-toast:hover {
+    background: #e62fff;
+    color: #f6f8f8;
+    transform: scale(1.05);
+    transition: transform .5s;
+}
+
 .btn-product {
     border-radius: 10px;
     color: #00f5ff;
@@ -197,6 +218,16 @@ transition: transform .5s;
 }
 
 .btn-quantity:hover {
+    background: #e62fff;
+    color: #f6f8f8;
+}
+
+.btn-form {
+    background: #1a213f;
+    color: #e62fff;
+}
+
+.btn-form:hover {
     background: #e62fff;
     color: #f6f8f8;
 }
@@ -282,16 +313,6 @@ input[type=text]:focus {
     background-color: #f6f8f8 !important;
 }
 
-.btn-form {
-    background: #1a213f;
-    color: #e62fff;
-}
-
-.btn-form:hover {
-    background: #e62fff;
-    color: #f6f8f8;
-}
-
 .qty_input {
     text-align: center;
 }
@@ -308,8 +329,22 @@ select {
 .message-container {
     z-index: 1000;
     position: fixed;
-    top: 100px;
-    right: 100px;
+    top: 120px;
+    right: 10px;
+}
+
+.bg-custom-toast {
+    background: #f6f8f8 !important;
+}
+
+.bag-wrapper {
+    height: 180px;
+    overflow-x: visible;
+    overflow-y: auto;
+}
+
+.toast-body {
+    padding: 0 !important;
 }
 
 /* FOOTER */
@@ -351,5 +386,10 @@ body {
     .img-thumbnail {
         padding: .2rem !important;
         margin: .2rem !important;
+    }
+    
+    .message-container {
+        max-width: 200px;
+        font-size: 0.6rem !important;
     }
 }
