@@ -8,3 +8,12 @@ input[type=email]:focus {
     background: #F6F8F8 !important;
     color: #212529 !important;
 }
+
+#payment-form .form-control,
+#card-element {
+    border: 1px solid #F6F8F8;
+}
+
+.fieldset-label {
+    position: relative;
+}
