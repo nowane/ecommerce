@@ -1,0 +1,14 @@
+input[type=email] {
+    background: #1a213f !important;
+    border-radius: 15px !important;
+    color: #e62fff !important;
+}
+
+input[type=email]:focus {
+    background: #F6F8F8 !important;
+    color: #212529 !important;
+}
+
+legend {
+    color: #00F5FF !important;
+}
