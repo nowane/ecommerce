@@ -15,11 +15,11 @@
             <div class="bag-wrapper">
                 {% for item in bag_items %}
                     <div class="row">
-                        <div class="col-3 mx-auto img-shadow-bag img-zoom">
-                            <img class="img-fluid img-thumbnail img-rounded img-shadow img-zoom"
+                        <div class="col-3 mx-auto img-zoom">
+                            <img class="img-fluid img-thumbnail img-rounded p-1"
                                 src="{{ item.product.image.url }}">
                         </div>
-                        <div class="col-9">
+                        <div class="col-9 space-left">
                             <p><strong>{{ item.product.name }}</strong></p>
                             <p class=" small text-muted">Qty: {{ item.quantity }}</p>
                         </div>

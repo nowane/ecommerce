@@ -33,6 +33,12 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 700;
 }
 
+/* MARGINS, PADDINGS */ 
+
+.space-left {
+    padding: 6px !important
+}
+
 /* ICONS */ 
 
 .footer-icon {
@@ -94,9 +100,7 @@ li > a > span > i:hover {
 
 .img-shadow-bag {
     display:inline-block;
-    padding: 2px 2px;
-    margin: 2px;
-    border-radius: 16px;
+    border-radius: 10px;
     box-shadow: inset 1px 2px 3px #000000, 0px 1px 1px #333;
 }
 
@@ -339,7 +343,7 @@ select {
 
 .bag-wrapper {
     height: 180px;
-    overflow-x: visible;
+    overflow-x: hidden;
     overflow-y: auto;
 }
 
