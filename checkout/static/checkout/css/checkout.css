@@ -1,3 +1,5 @@
+/* FORM */
+
 input[type=email] {
     background: #1a213f !important;
     border-radius: 15px !important;
@@ -16,4 +18,34 @@ input[type=email]:focus {
 
 .fieldset-label {
     position: relative;
+}
+
+/* STRIPE */
+
+.StripeElement,
+.stripe-style-input {
+  box-sizing: border-box;
+  height: 40px;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  background-color: #1a213f;
+  box-shadow: 0 1px 3px 0 #000000;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus,
+.stripe-style-input:focus,
+.stripe-style-input:active {
+  box-shadow: 0 1px 3px 0 #f6f8f8;
+  background: #f6f8f8 !important;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #f6f8f8 !important;
+}
+
+.stripe-style-input::placeholder {
+    color: #f6f8f8;
 }
