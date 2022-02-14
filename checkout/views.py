@@ -46,7 +46,7 @@ def checkout(request):
                             product=product,
                             quantity=item_data,
                         )
-                        order_line_item.save()             
+                        order_line_item.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
                         "One of the products in your bag wasn't found in our database. "
@@ -93,7 +93,7 @@ def checkout(request):
 
 def checkout_success(request, order_number):
     """
-    Handle successful checkouts
+    A view to handle successful checkouts.
     """
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
