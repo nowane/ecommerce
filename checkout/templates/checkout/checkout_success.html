@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="bg-overlay"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <h3 class="mt-3 mb-3 text-center text-bold">Thanks for your order!</h3>
+                <hr class="hr-purple w-50 mb-4 mx-auto">
+                <p class="text-blue">Your order information is below. 
+                    You will recieve a confirmation email shortly at <strong>{{ order.email }}</strong>.
+                </p>
+            </div>
+        </div>
+        <div class="content-container">
+
+            <div class="row">
+                <div class="col-12 col-lg-7">
+                    <a href="{% url 'products' %}" class="btn btn-bag rounded my-2">
+                        <span class="icon mr-2">
+                            <i class="fa-solid fa-right-long"></i>
+                        </span>
+                        <span class="text-uppercase">Check out other styles!</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
