@@ -49,3 +49,24 @@ input[type=email]:focus {
 .stripe-style-input::placeholder {
     color: #f6f8f8;
 }
+
+/* LOADING SPINNER */ 
+
+#loading-overlay {
+	display: none;
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 245, 255, .8);
+    z-index: 99999;
+}
+
+.spinner {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
+}

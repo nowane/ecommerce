@@ -39,20 +39,19 @@ card.addEventListener('change', function (event) {
     } else {
         errorDiv.textContent = '';
     }
-});
-
-// Handle form submit
-var form = document.getElementById('payment-form');
-
-form.addEventListener('submit', function(ev) {
+  });
+  
+  // Handle form submit
+  var form = document.getElementById('payment-form');
+  
+  form.addEventListener('submit', function(ev) {
+    // Prevent form from submitting and disable card element
     ev.preventDefault();
     card.update({ 'disabled': true});
     $('#submit-button').attr('disabled', true);
-    $('#payment-form').fadeToggle(100);
-    $('#loading-overlay').fadeToggle(100);
-
+  
+    // Capture from details not added to PaymentIntent
     var saveInfo = Boolean($('#id-save-info').attr('checked'));
-    // From using {% csrf_token %} in the form
     var csrfToken = $('input[name="csrfmiddlewaretoken"]').val();
     var postData = {
         'csrfmiddlewaretoken': csrfToken,
@@ -60,7 +59,10 @@ form.addEventListener('submit', function(ev) {
         'save_info': saveInfo,
     };
     var url = '/checkout/cache_checkout_data/';
-
+  
+    // Post to cache_data_checkout view
+    // View updates PaymentIntent and returns 200 server response
+    // Call confirmCardPayment and store billing and shipping details 
     $.post(url, postData).done(function () {
         stripe.confirmCardPayment(clientSecret, {
             payment_method: {
@@ -91,6 +93,7 @@ form.addEventListener('submit', function(ev) {
                 }
             },
         }).then(function(result) {
+            // Handle any errors
             if (result.error) {
                 var errorDiv = document.getElementById('card-errors');
                 var html = `
@@ -98,19 +101,22 @@ form.addEventListener('submit', function(ev) {
                     <i class="fas fa-times"></i>
                     </span>
                     <span>${result.error.message}</span>`;
+                // Display error
                 $(errorDiv).html(html);
-                $('#payment-form').fadeToggle(100);
-                $('#loading-overlay').fadeToggle(100);
+                // Re-enable card element and submit button
                 card.update({ 'disabled': false});
                 $('#submit-button').attr('disabled', false);
+            
+            // Submit form
             } else {
                 if (result.paymentIntent.status === 'succeeded') {
                     form.submit();
                 }
             }
         });
+  
+    // If data not posted to view, reload the page and allow any Django error messages
     }).fail(function () {
-        // Reloads the page, error will be in django messages
         location.reload();
-    })
-});
+    });
+  });
