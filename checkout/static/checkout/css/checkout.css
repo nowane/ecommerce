@@ -20,6 +20,19 @@ input[type=email]:focus {
     position: relative;
 }
 
+select,
+select option {
+    color: #f6f8f8 !important;
+    background: #1a213f !important;
+    border-radius: 15px !important;
+    border-color: #f6f8f8;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #5A7272 !important;
+}
+
 /* STRIPE */
 
 .StripeElement,
