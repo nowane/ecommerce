@@ -173,7 +173,8 @@ transition: transform .5s;
 
 .btn-bag {
     background: #00f5ff;
-    color: #e62fff
+    color: #e62fff;
+    font-weight: bold;
 }
 
 .btn-bag:hover {
@@ -181,7 +182,6 @@ transition: transform .5s;
     color: #00f5ff;
     transform: scale(1.2);
     transition: transform .5s;
-    font-weight: bold;
 }
 
 .btn-bag-toast {
@@ -202,6 +202,7 @@ transition: transform .5s;
     border-radius: 10px;
     color: #00f5ff;
     background: #161C36;
+    font-weight: bold;
 }
 
 .btn-product:hover {
@@ -209,7 +210,6 @@ transition: transform .5s;
     background: #E62FFF;
     transform: scale(1.05);
     transition: transform .5s;
-    font-weight: bold;
 }
 
 .btn-checkout {
@@ -336,6 +336,68 @@ input[type=text]:focus {
 select {
     background: #1a213f;
     color: #00f5ff;
+}
+
+/* ALLAUTH */
+
+.inner-content h1,
+.inner-content h2,
+.inner-content h3,
+.inner-content h4,
+.inner-content h5,
+.inner-content h6 {
+    text-align: center;
+}
+
+.inner-content p {
+    margin-top: 1.5rem;
+    color: #00f5ff;
+}
+
+.inner-content input {
+    border-radius: 15px;
+    border-color: #f6f8f8;
+}
+
+.inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.form-check-label {
+    color: #f6f8f8;
+    font-size: 80%;
+}
+
+.inner-content input::placeholder {
+    color: #f6f8f8;
+}
+
+.inner-content button,
+.inner-content input[type='submit'] {
+	display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 1rem;
+    font-family: Karla, sans-serif;
+}
+
+.inner-content button:hover,
+.inner-content input[type='submit']:hover {	
+	color: #00f5ff;
+    background-color: #e62fff;
+    transform: scale(1.1);
+    transition: transform .5s;
+}
+
+.inner-content input {
+    background: #1a213f;
+    color: #e62fff;
+    border: 1px solid #f6f8f8;
 }
 
 /* TOASTS */ 
