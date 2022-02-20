@@ -1,3 +1,5 @@
+/* FORM */
+
 select,
 select option {
     background: #1a213f !important;
@@ -20,4 +22,11 @@ select option {
 
 #id_default_country option:first-child {
     color: #5A7272;
+}
+
+/* TABLE */ 
+
+.order-history {
+    max-height: 416px;
+    overflow-y: auto;
 }
