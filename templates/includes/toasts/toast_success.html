@@ -5,12 +5,12 @@
     </div>
     <div class="toast-body">
         <div class="row">
-            <div class="col">
+            <div class="col ms-2">
                 {{ message }}
             </div>
         </div>
 
-        {% if grand_total %}
+        {% if grand_total and not on_profile_page %}
             <p class="py-1">Your Bag ({{ product_count }})</p>
             <div class="bag-wrapper">
                 {% for item in bag_items %}
@@ -19,7 +19,7 @@
                             <img class="img-fluid img-thumbnail img-rounded p-1"
                                 src="{{ item.product.image.url }}">
                         </div>
-                        <div class="col-9 space-left">
+                        <div class="col-9 space-end">
                             <p><strong>{{ item.product.name }}</strong></p>
                             <p class=" small text-muted">Qty: {{ item.quantity }}</p>
                         </div>

@@ -33,6 +33,10 @@ select option[value=""] {
     color: #5A7272 !important;
 }
 
+.form-select {
+    color: #e62fff !important;
+}
+
 /* STRIPE */
 
 .StripeElement,

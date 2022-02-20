@@ -166,9 +166,9 @@ li > a > span > i:hover {
   }
   
 #toTop:hover {
-color: #e62fff;
-transform: scale(1.5);
-transition: transform .5s;
+    color: #e62fff;
+    transform: scale(1.5);
+    transition: transform .5s;
 }
 
 .btn-bag {

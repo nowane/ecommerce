@@ -1,0 +1,23 @@
+select,
+select option {
+    background: #1a213f !important;
+    border-radius: 15px !important;
+    border-color: #f6f8f8;
+}
+
+#profile-update-form .form-control {
+    color: #e62fff;
+}
+
+#profile-update-form input::placeholder {
+    color: #f6f8f8;
+}
+
+#id_default_country,
+#id_default_country option:not(:first-child) {
+    color: #e62fff;
+}
+
+#id_default_country option:first-child {
+    color: #5A7272;
+}
