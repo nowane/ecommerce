@@ -5,6 +5,7 @@ from django.db.models.functions import Lower
 
 from .models import Product, Category
 from .forms import ProductForm
+
 # Create your views here.
 
 
@@ -73,7 +74,19 @@ def product_detail(request, product_id):
 
 def add_product(request):
     """ Add a product to the store """
-    form = ProductForm()
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Product added')
+            return redirect(reverse('add_product'))
+        else:
+            messages.error(request, "Failed to add product - please \
+                                     check form and try again")
+
+    else:
+        form = ProductForm()
+
     template = 'products/add_product.html'
     context = {
         'form': form,

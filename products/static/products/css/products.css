@@ -1,0 +1,25 @@
+.form-select,
+.form-control {
+    background-color: #1a213f !important;
+    color: #e62fff;
+}
+
+textarea:focus {
+    background: #f6f8f8 !important;
+    color: #1a213f !important;
+}
+
+label {
+    color: #f6f8f8;
+}
+
+#id_price:focus,
+#id_average_rating:focus,
+#id_image_url:focus {
+    background: #f6f8f8 !important;
+}
+
+#id_image_form:focus,
+#id_image_form:active {
+    color:#e62fff !important;
+}
