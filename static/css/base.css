@@ -73,6 +73,15 @@ li > a > span > i:hover {
     border: 2px solid #e62fff;
 }
 
+.border-custom-small {
+    border: 1px solid #e62fff;
+    border-radius: 15px;
+}
+
+hr {
+    opacity: 1 !important;
+}
+
 .hr-purple {
     border: 3px solid #e62fff;
     border-radius: 3px;
