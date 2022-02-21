@@ -49,9 +49,13 @@ card.addEventListener('change', function (event) {
     ev.preventDefault();
     card.update({ 'disabled': true});
     $('#submit-button').attr('disabled', true);
+    // Triggers loading-overlay
+    $('#payment-form').fadeToggle(100);
+    $('#loading-overlay').fadeToggle(100);
   
     // Capture from details not added to PaymentIntent
     var saveInfo = Boolean($('#id-save-info').attr('checked'));
+    // From using {% csrf_token %} in the form
     var csrfToken = $('input[name="csrfmiddlewaretoken"]').val();
     var postData = {
         'csrfmiddlewaretoken': csrfToken,
@@ -103,6 +107,9 @@ card.addEventListener('change', function (event) {
                     <span>${result.error.message}</span>`;
                 // Display error
                 $(errorDiv).html(html);
+                // Hide the loading-overlay
+                $('#payment-form').fadeToggle(100);
+                $('#loading-overlay').fadeToggle(100);
                 // Re-enable card element and submit button
                 card.update({ 'disabled': false});
                 $('#submit-button').attr('disabled', false);
