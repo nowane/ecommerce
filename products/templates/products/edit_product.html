@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'products/css/products.css' %}">
+{% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="bg-overlay"></div>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12">
+                <div class="col-10 offset-1 col-md-8 offset-md-2 col-xl-6 offset-xl-3">
+                    <h3 class="mt-4 mb-3 text-center text-bold">Product Management</h3>
+                    <h5 class="text-blue text-center text-bold">Edit Product</h5>
+                    <hr class="hr-purple-sm mb-5 mt-3">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="col-10 offset-1 col-md-8 offset-md-2 col-xl-6 offset-xl-3">
+                <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-3" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form | crispy }}
+                    <div class="text-end">
+                        <a class="btn btn-bag rounded" href="{% url 'products' %}">Cancel</a>
+                        <button class="btn btn-bag rounded" type="submit">Update Product</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
