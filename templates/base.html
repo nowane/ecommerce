@@ -73,20 +73,23 @@
                     </li>
 
                     <li class="nav-item dropdown" id="myDropdown2">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Sale</a>
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Designer Silks</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Brand 1</a></li>
-                            <li><a class="dropdown-item" href="#">Brand 2</a></li>
-                            <li><a class="dropdown-item" href="#">Brand 3</a></li>
+                            <li><a href="{% url 'products' %}?category=silk_animal_print" class="dropdown-item">Animal Prints</a></li>
+                            <li><a href="{% url 'products' %}?category=silk_floral_print" class="dropdown-item">Floral Prints</a></li>
+                            <li><a href="{% url 'products' %}?category=silk_botanical_print" class="dropdown-item">Botanical Prints</a></li>
                         </ul>
                     </li>
 
                     <li class="nav-item dropdown" id="myDropdown3">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Fabrics</a>
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Other Fabrics</a>
                         <ul class="dropdown-menu">
-                            <li><a href="{% url 'products' %}?category=printed_cotton" class="dropdown-item">Printed Cotton</a></li>
-                            <li><a href="{% url 'products' %}?category=silk_animal_print" class="dropdown-item">Silk Animal Prints</a></li>
-                            <li><a href="{% url 'products' %}?category=silk_floral_print" class="dropdown-item">Silk Floral Prints</a></li>
+                            <li><a href="{% url 'products' %}?category=printed_cotton" class="dropdown-item">Printed Cotton & Viscose</a></li>
+                            <li><a href="{% url 'products' %}?category=printed_jersey" class="dropdown-item">Printed Jersey's</a></li>
+                            <li><a href="{% url 'products' %}?category=tweed" class="dropdown-item">Tweed</a></li>
+                            <li><a href="{% url 'products' %}?category=satin" class="dropdown-item">Satin</a></li>
+                            <li><a href="{% url 'products' %}?category=wool_crepe" class="dropdown-item">Wool Crêpe</a></li>
+                            <li><a href="{% url 'products' %}?category=beaded_fabrics_sequin" class="dropdown-item">Beaded Fabrics/Sequins</a></li>
                         </ul>
                     </li>
 
