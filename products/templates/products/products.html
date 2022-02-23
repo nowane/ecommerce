@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block page_header %}
+{% block extra_title %}Products{% endblock %}
     <div class="container header-container">
         <form method="GET" action="{% url 'products' %}">
             <div class="input-group">
