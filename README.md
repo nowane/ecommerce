@@ -46,6 +46,7 @@ A mockup of the project, displaying responsiveness.
       - [Add or edit product](#add-or-edit-recipes)
       - [Product information](#recipe-information)
       - [Profile page](#profile-page)
+      - [Stripe payment system](#stripe-payment-system)
     - [Future features](#future-features)
 - [Technologies](#technologies)
   - [Databases](#databases)
@@ -107,7 +108,7 @@ A mockup of the project, displaying responsiveness.
 
   The main colours used for the site are as follows:
 
-![Colour scheme](https://github.com/nowane/ecommerce/blob/main/media/coolors.png)
+![Colour scheme](media/coolors.png)
 
 - Two darker shades of blue are used for for background.
 - The light blue is used mostly for text, headers and links. 
@@ -230,8 +231,6 @@ Added [Wireframes](------------------) for desktop, tablet and mobile.
 
 
 
-
-
 [Back to table of content](#table-of-content)
 
 ---
@@ -297,14 +296,40 @@ Added [Wireframes](------------------) for desktop, tablet and mobile.
 
 - [Favicon](https://favicon.io/) - Used for making the favicons.
 
+- [Gmail](https://mail.google.com/) - Used for order and account information feedback to customer.
+
 - [Jpg2png](https://jpg2png.com/) - Used to convert jpg to png.
 
 - [Namecheap](https://www.namecheap.com/) - Used for creating the site logo.
 
 - [Photopea](https://www.photopea.com/) - Used to get rid of the logo's background-colour.
 
-- [StackOverflow](https://stackoverflow.com/) - Used as a general reference resource. 
+- [StackOverflow](https://stackoverflow.com/) - Used as a general reference resource.
 
+- [Stripe](https://stripe.com/) - Payment infrastructure.
+    <details>
+    <summary>Stripe payment system setup information</summary>
+
+    - Create a [Stripe](https://stripe.com) account or log in to an existing account.
+    - On the Stripe dashboard, under 'Developers' copy the 'test API key' and 'Secret key'. Use these as the values for the environment and Heroku variables STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY as detailed above. 
+
+    ## Create new webhook end point.
+    **NOTE:** Two separate webhooks will need to be setup. One for the development environment and one for the Heroku app.
+    - Run the application to get the address of the site.  Copy this and go to the Stripe dashboard.
+    - Click 'Developers', select 'webhooks' and then click 'Add endpoint'.
+    - Paste in the site URL and add to the end '/checkout/wh/.
+    - Click 'Select Events' and select the events to listen to as:
+    ```
+      payment_intent.suceeded
+
+      payment_intent.payment_failed
+    ```
+    - In the newly created webhook endpoint details the `signing secret` is now available. Copy this and add it to the value for the environment and Heroku variable STRIPE_WH_SECRET as detailed above.
+    - Recently the option to send a test webhook was lost since Stripe removed this option.
+
+    The STRIPE_CURRENCY variable is defined within the Django app 'settings' python file and is set to 'EUR'.  If a different currency is needed then this will need to be changed. See this link for [supported currencies](https://stripe.com/docs/currencies#presentment-currencies)
+
+    </details>
 
 [Back to table of content](#table-of-content)
 
@@ -326,7 +351,7 @@ The master branch of this repository is the most current version and has been us
 
 <details>
 <summary> How to clone and run the repository locally</summary>
-<p>
+
 
 To clone this project from its [GitHub repository](https://github.com/nowane/ecommerce):
 - From the repository, click **Code**.
@@ -389,10 +414,10 @@ python3 manage.py runserver
 </details>
 
 
-<p>
+
 <details>
 <summary>How to deploy to Heroku</summary>
-<p>
+
 
 To deploy the app to Heroku from its [GitHub repository](https://github.com/nowane/ecommerce):
 - **Log In** to [Heroku](https://id.heroku.com/login).
@@ -469,7 +494,7 @@ git push
 
 <details>
 <summary>Setting up an AWS S3 Bucket</summary>
-<p>
+
 
 - Create an [Amazon AWS](aws.amazon.com) account.
 - Search for **S3** and create a new bucket.
@@ -515,10 +540,10 @@ git push
 </details>
 
 
-<p>
+
 <details>
 <summary>Setting up AWS Identity and Access Management</summary>
-<p>
+
 
 - From the **IAM dashboard** within AWS, select **User Groups**:
   - Create new group e.g. `manage-fabricz` .
@@ -552,10 +577,10 @@ git push
 </details>
 
 
-<p>
+
 <details>
 <summary>Connecting Django to AWS S3</summary>
-<p>
+
 
 - Install boto3 and django-storages.
 ```
