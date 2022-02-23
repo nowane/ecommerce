@@ -17,7 +17,7 @@ View live website [here](https://fabricz.herokuapp.com/)
 
 A mockup of the project, displaying responsiveness.
 
-![Mockup](-----------------------------------)
+![Mockup](media/testing/images/mockup.png)
 
 ---
 

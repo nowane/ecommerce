@@ -35,7 +35,7 @@
 
 A mockup of the project, displaying responsiveness.
 
-![Mockup](-----------------------------)
+![Mockup](media/testing/images/mockup.png)
 
 [Back to table of content](#table-of-content)
 
