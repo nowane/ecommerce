@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'storages',
     'crispy_forms',
     'crispy_bootstrap5',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -222,6 +223,15 @@ else:
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+
+
+# Data-schema diagram
+
+GRAPH_MODELS = {
+  'all_applications': True,
+  'group_models': True,
+}
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

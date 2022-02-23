@@ -129,15 +129,14 @@ A mockup of the project, displaying responsiveness.
 
   #### Wireframes
 
-Added [Wireframes](------------------) for desktop, tablet and mobile.
-![Wireframes](https://github.com/nowane/ecommerce/tree/main/docs/wireframes/wireframes.pdf)
+Added [Wireframes](https://github.com/nowane/ecommerce/tree/main/docs/wireframes/wireframes.pdf) for desktop, tablet and mobile.
 
 [Back to table of content](#table-of-content)
 
 
   #### Database schema
 
-![Diagram schema](------------------------)
+[Diagram schema](https://github.com/nowane/ecommerce/tree/main/docs/database/all_apps_schema.svg) of all apps.
 
 
 [Back to table of content](#table-of-content)
