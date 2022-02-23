@@ -136,8 +136,15 @@ Added [Wireframes](https://github.com/nowane/ecommerce/tree/main/docs/wireframes
 
   #### Database schema
 
-[Diagram schema](https://github.com/nowane/ecommerce/tree/main/docs/database/all_apps_schema.svg) of all apps.
+[Diagram schema](https://github.com/nowane/ecommerce/tree/main/docs/database/all_apps_schema.svg) of:
 
+  - Bag
+  - Checkout
+  - Home
+  - Products
+  - Profiles
+
+[Diagram schema](https://github.com/nowane/ecommerce/tree/main/docs/database/all_apps_schema.svg) of all apps.
 
 [Back to table of content](#table-of-content)
 
@@ -293,6 +300,46 @@ Added [Wireframes](https://github.com/nowane/ecommerce/tree/main/docs/wireframes
 - [Balsamiq](https://balsamiq.com/wireframes/) - Used to make wireframes.
 
 - [Coolors](https://coolors.co/) - Used to create a colour schema.
+
+- [Django Graph models](https://django-extensions.readthedocs.io/en/latest/graph_models.html) - Used to visualize the DB
+
+    <details>
+    <summary>Description on how to use the graph models</summary>
+
+    In your command line install these packages:
+    ```
+    pip install django-extensions
+    pip install pyparsing pydot
+    ```
+    Then in 'settings.py' add 'django_extenstions' to your installed apps
+    ```
+    INSTALLED_APPS = [
+      .....
+        "django_extensions",
+    ]
+    Specify default options and select which apps you want to draw
+    GRAPH_MODELS = {
+      'all_applications': True,
+      'group_models': True,
+      "app_labels": [
+            "app1",
+            "app2",
+        ],
+    }
+    ```
+    Then in your command line:
+    This will create a .dot file containing the code used to draw your diagram from your selected apps in 'GRAPH_MODELS' :
+
+    ```./manage.py graph_models > my_project_name.dot```
+    or
+    This will creates a .dot file containing the code used to draw your diagram from all your apps:
+    ```./manage.py graph_models -a > my_project_name.dot```
+
+    Next go into your 'my_project_name.dot'-file and ```Ctrl + A``` and ```Ctrl + C``` .
+    After you've done that head over to this [Website](https://dreampuf.github.io/GraphvizOnline/#digraph%20G%20%7B%0A%0A%20%20subgraph%20cluster_0%20%7B%0A%20%20%20%20style%3Dfilled%3B%0A%20%20%20%20color%3Dlightgrey%3B%0A%20%20%20%20node%20%5Bstyle%3Dfilled%2Ccolor%3Dwhite%5D%3B%0A%20%20%20%20a0%20-%3E%20a1%20-%3E%20a2%20-%3E%20a3%3B%0A%20%20%20%20label%20%3D%20%22process%20%231%22%3B%0A%20%20%7D%0A%0A%20%20subgraph%20cluster_1%20%7B%0A%20%20%20%20node%20%5Bstyle%3Dfilled%5D%3B%0A%20%20%20%20b0%20-%3E%20b1%20-%3E%20b2%20-%3E%20b3%3B%0A%20%20%20%20label%20%3D%20%22process%20%232%22%3B%0A%20%20%20%20color%3Dblue%0A%20%20%7D%0A%20%20start%20-%3E%20a0%3B%0A%20%20start%20-%3E%20b0%3B%0A%20%20a1%20-%3E%20b3%3B%0A%20%20b2%20-%3E%20a3%3B%0A%20%20a3%20-%3E%20a0%3B%0A%20%20a3%20-%3E%20end%3B%0A%20%20b3%20-%3E%20end%3B%0A%0A%20%20start%20%5Bshape%3DMdiamond%5D%3B%0A%20%20end%20%5Bshape%3DMsquare%5D%3B%0A%7D) and paste in the copied code.
+    Once that is done, you can select the preferred format of the file to download.
+    More information can be found in the [documentation](https://django-extensions.readthedocs.io/en/latest/graph_models.html).
+    </details>
 
 - [Favicon](https://favicon.io/) - Used for making the favicons.
 
@@ -625,6 +672,7 @@ AWS_SECRET_ACCESS_KEY
 
   ### Acknowledgements
 
+- Thanks to [Emmett Becirovic](https://github.com/bozy15) for posting about the graph models in slack.
 
 
 [Back to table of content](#table-of-content)
