@@ -130,6 +130,7 @@ A mockup of the project, displaying responsiveness.
   #### Wireframes
 
 Added [Wireframes](------------------) for desktop, tablet and mobile.
+![Wireframes](https://github.com/nowane/ecommerce/tree/main/docs/wireframes/wireframes.pdf)
 
 [Back to table of content](#table-of-content)
 
