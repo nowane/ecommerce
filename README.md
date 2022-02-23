@@ -297,6 +297,20 @@ Added [Wireframes](------------------) for desktop, tablet and mobile.
 - [Favicon](https://favicon.io/) - Used for making the favicons.
 
 - [Gmail](https://mail.google.com/) - Used for order and account information feedback to customer.
+    <details>
+    <summary>Gmail email setup information</summary>
+    ##### Email Setup
+    The below instructions cover the setup using a [Gmail](https://mail.google.com) account.
+
+    - Log in to your email account or set one up.
+    - Click account settings, and select the 'Accounts and Import' option from the top selection
+    - Under 'Change account settings' click 'Other Google Account settings'
+    - Click on the 'security' option on the left and then under 'Signing in to Google' click on '2-Step Verification'
+    - Click 'get started', enter password and then work through the verification.
+    - Once verification is done and 2-Step verification is turned on, a new option now shows under the previous 'Signing in to Google' menu screen.
+    - In this, on the App passwords screen, select from the dropdowns; 'mail' for app and 'other' for device. Add an appropriate name and click 'generate'.
+    You will then be given a 16 character password which you will need to copy.
+    </details>
 
 - [Jpg2png](https://jpg2png.com/) - Used to convert jpg to png.
 
@@ -309,11 +323,10 @@ Added [Wireframes](------------------) for desktop, tablet and mobile.
 - [Stripe](https://stripe.com/) - Payment infrastructure.
     <details>
     <summary>Stripe payment system setup information</summary>
-
     - Create a [Stripe](https://stripe.com) account or log in to an existing account.
     - On the Stripe dashboard, under 'Developers' copy the 'test API key' and 'Secret key'. Use these as the values for the environment and Heroku variables STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY as detailed above. 
 
-    ## Create new webhook end point.
+      ##### Create new webhook end point.
     **NOTE:** Two separate webhooks will need to be setup. One for the development environment and one for the Heroku app.
     - Run the application to get the address of the site.  Copy this and go to the Stripe dashboard.
     - Click 'Developers', select 'webhooks' and then click 'Add endpoint'.
@@ -328,7 +341,6 @@ Added [Wireframes](------------------) for desktop, tablet and mobile.
     - Recently the option to send a test webhook was lost since Stripe removed this option.
 
     The STRIPE_CURRENCY variable is defined within the Django app 'settings' python file and is set to 'EUR'.  If a different currency is needed then this will need to be changed. See this link for [supported currencies](https://stripe.com/docs/currencies#presentment-currencies)
-
     </details>
 
 [Back to table of content](#table-of-content)
