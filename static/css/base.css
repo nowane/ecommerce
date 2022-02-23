@@ -300,9 +300,7 @@ hr {
 .navbar-toggler {
     background-color: #00f5ff !important;
 }
-
-.nav-link:hover,
-a:hover {
+.nav-link:hover {
     color: #e62fff !important;
 }
 
