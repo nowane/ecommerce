@@ -31,7 +31,13 @@
         <div class="col-10 offset-1 col-md-8 offset-md-2 col-xl-6 offset-xl-3">
             <form method="POST" action="{% url 'add_product' %}" class="form mb-3" enctype="multipart/form-data">
                 {% csrf_token %}
-                {{ form | crispy }}
+                {% for field in form %}
+                    {% if field.name != 'image' %}
+                        {{ field | as_crispy_field }}
+                    {% else %}
+                        {{ field }}
+                    {% endif %}
+                {% endfor %}
                 <div class="text-end">
                     <a class="btn btn-bag rounded" href="{% url 'products' %}">Cancel</a>
                     <button class="btn btn-bag rounded" type="submit">Add Product</button>
@@ -40,4 +46,9 @@
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script src="{% static 'products/js/image_change.js' %}"></script>
 {% endblock %}
