@@ -304,6 +304,10 @@ hr {
     color: #e62fff !important;
 }
 
+.a-hover:hover {
+    color: #e62fff !important;
+}
+
 /* BACKGROUND */
 
 body {
