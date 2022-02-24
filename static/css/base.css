@@ -94,6 +94,16 @@ hr {
 
 /* CARDS */
 
+.card-body {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-footer {
+    border-bottom-left-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
+}
+
 .card-body,
 .card-footer {
     background: #f6f8f8 !important;
