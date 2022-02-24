@@ -396,7 +396,7 @@ Added [Wireframes](https://github.com/nowane/ecommerce/tree/main/docs/wireframes
 
 ## Testing
 
-This [testing document](https://github.com/nowane/ecommerce/blob/main/TESTING.md)  contains all testing.
+This [testing document](https://github.com/nowane/ecommerce/blob/main/TESTING.md) contains all testing.
 
 [Back to table of content](#table-of-content)
 
