@@ -39,11 +39,7 @@ A mockup of the project, displaying responsiveness.
   - [Features implemented](#features-implemented)
     - [Navigation](#navigation)
     - [Security](#security)
-    - [Managing data](#managing-data)
-      - [Update database](#update-database)
-      - [Delete product](#delete-cuisine)
-      - [Delete product:](#delete-recipe)
-      - [Add or edit product](#add-or-edit-recipes)
+    - [CRUD functionality](#crud-functionality)
       - [Product information](#recipe-information)
       - [Profile page](#profile-page)
       - [Stripe payment system](#stripe-payment-system)
@@ -136,14 +132,6 @@ Added [Wireframes](https://github.com/nowane/ecommerce/tree/main/docs/wireframes
 
   #### Database schema
 
-[Diagram schema](https://github.com/nowane/ecommerce/tree/main/docs/database/all_apps_schema.svg) of:
-
-  - Bag
-  - Checkout
-  - Home
-  - Products
-  - Profiles
-
 [Diagram schema](https://github.com/nowane/ecommerce/tree/main/docs/database/all_apps_schema.svg) of all apps.
 
 [Back to table of content](#table-of-content)
@@ -174,46 +162,20 @@ Added [Wireframes](https://github.com/nowane/ecommerce/tree/main/docs/wireframes
 
 ---
 
-  #### Managing data
+#### CRUD functionality
 
-  ##### Update database
-  
+  ##### All users can:
 
+- Read all products.
 
+  ##### Registered users can:
 
-
-
-[Back to table of content](#table-of-content)
-
----
-
-  ##### Delete product
+- Update their delivery details.
 
 
+  ##### Superusers can:
 
-
-
-
-[Back to table of content](#table-of-content)
-
----
-
-  ##### Delete product
-
-
-
-
-
-
-[Back to table of content](#table-of-content)
-
----
-
-  #####  Add or edit product
-  
-
-
-
+- Create, Update and Delete products.
 
 
 [Back to table of content](#table-of-content)
