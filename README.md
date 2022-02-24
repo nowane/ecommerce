@@ -156,8 +156,9 @@ Added [Wireframes](https://github.com/nowane/ecommerce/tree/main/docs/wireframes
 
   #### Navigation
 
+- Consistent on all pages, the navigation bar provides quick access to all areas of the site.
 
-
+- An easy back to top button when scolled down.
 
 
 [Back to table of content](#table-of-content)
