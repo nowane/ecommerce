@@ -11,18 +11,18 @@
         </div>
 
         {% if grand_total and not on_profile_page %}
-            <p class="py-1">Your Bag ({{ product_count }})</p>
+            <p class="py-1 ms-2">Your Bag ({{ product_count }})</p>
             <div class="bag-wrapper">
                 {% for item in bag_items %}
                     <div class="row">
-                        <div class="col-3 mx-auto img-zoom">
+                        <div class="col-3 mx-auto border-custom-small">
                             {% if item.product.image %}
-                                <img class="w-100" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                                <img class="w-100 py-2" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
                             {% else %}
-                                <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+                                <img class="w-100 py-2" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
                             {% endif %}
                         </div>
-                        <div class="col-9 space-end">
+                        <div class="col-7 space-end">
                             <p><strong>{{ item.product.name }}</strong></p>
                             <p class=" small text-muted">Qty: {{ item.quantity }}</p>
                         </div>

@@ -3,7 +3,8 @@ html {
 }
 
 img {
-    max-height: 60vh;;
+    max-height: 60vh;
+    border-radius: 15px !important;
 }
 
 /* FONTS */ 
@@ -111,13 +112,13 @@ hr {
 .img-shadow {
     display:inline-block;
     padding: 10px 15px;
-    border-radius: 20px;
+    border-radius: 15px;
     box-shadow: inset 2px 3px 5px #000000, 0px 1px 1px #333;
 }
 
 .img-shadow-bag {
     display:inline-block;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: inset 1px 2px 3px #000000, 0px 1px 1px #333;
 }
 
@@ -135,12 +136,12 @@ hr {
     transform: scale(1.05);
 }
 
-.img-rounded {
-    border-radius: 20px;
-}
-
 .img-thumbnail {
     background: #F6F8F8;
+}
+
+.of-allow {
+    overflow: visible;
 }
 
 /* BUTTON */
