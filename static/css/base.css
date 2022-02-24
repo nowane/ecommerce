@@ -247,6 +247,8 @@ hr {
 .btn-form {
     background: #1a213f;
     color: #e62fff;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .btn-form:hover {
