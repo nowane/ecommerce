@@ -167,10 +167,7 @@ Added [Wireframes](https://github.com/nowane/ecommerce/tree/main/docs/wireframes
 
   #### Security
 
-
-
-
-
+- Account security is covered by Django's allauth.
 
 
 [Back to table of content](#table-of-content)
