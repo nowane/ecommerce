@@ -204,8 +204,13 @@ Added [Wireframes](https://github.com/nowane/ecommerce/tree/main/docs/wireframes
 
 ### Future features
 
-
-
+- A better and more realistic way of handling comsumers quantity demands.
+- A working rating system.
+- Pagination.
+- Advanced search features to handle an increased product list.
+- Apple / Google pay to improve checkout experience.
+- A 'Contact Us' feature for improved correspondance with users.
+- An 'About Us' page to give insight into the brand FabricZ.
 
 
 [Back to table of content](#table-of-content)
