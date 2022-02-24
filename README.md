@@ -184,7 +184,16 @@ Added [Wireframes](https://github.com/nowane/ecommerce/tree/main/docs/wireframes
 
   ##### Product information
 
+- Contains a picture of the product which gets a bit bigger on :hover .
 
+- Contains a card with product information:
+    - Product name.
+    - Product price.
+    - Add/Delete button for allowed user.
+    - Category link which links to a search query with products of this particular category.
+    - '+'  and '-' button to increase/decrease quantity
+    - A link to go back to the products page.
+    - A link witht he option to add the product to the shopping bag.
 
 
 
