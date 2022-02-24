@@ -661,9 +661,7 @@ AWS_SECRET_ACCESS_KEY
 
 ## Credits
 
-[noimage.png](https://commons.wikimedia.org/wiki/File:No-image-available.png) - Used with this linking to the license.
-
-
+- [noimage.png](https://commons.wikimedia.org/wiki/File:No-image-available.png) - Used with this linking to the license.
 
 
 [Back to table of content](#table-of-content)
@@ -672,8 +670,11 @@ AWS_SECRET_ACCESS_KEY
 
   ### Acknowledgements
 
+- Thanks to [Chris Zielinski](https://github.com/ckz8780/) for his clear explanation of the Boutique Ado project.
+
 - Thanks to [Emmett Becirovic](https://github.com/bozy15) for posting about the graph models in slack.
 
+- Thanks to my father-in-law for allowing me to use the product images coming directly from the website of his own store [Nanucci Tessuti](https://nanuccitessuti.nl/).
 
 [Back to table of content](#table-of-content)
 
