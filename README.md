@@ -194,9 +194,8 @@ Added [Wireframes](https://github.com/nowane/ecommerce/tree/main/docs/wireframes
 
   ##### Profile page
 
-
-
-
+- Contains delivery for logged in users which can be updated.
+- Contains the order history of the user, if opted to 'Save this delivery information to my profile'.
 
 [Back to table of content](#table-of-content)
 
