@@ -23,7 +23,6 @@ A mockup of the project, displaying responsiveness.
 
 ## Table of content
 
-- [Tradeoff table](#tradeoff-table)
 - [User experience -UX-](#user-experience--ux-)
   - [User stories](#user-stories)
     - [As a new user](#as-a-new-user)
@@ -40,9 +39,8 @@ A mockup of the project, displaying responsiveness.
     - [Navigation](#navigation)
     - [Security](#security)
     - [CRUD functionality](#crud-functionality)
-      - [Product information](#recipe-information)
+      - [Product information](#product-information)
       - [Profile page](#profile-page)
-      - [Stripe payment system](#stripe-payment-system)
     - [Future features](#future-features)
 - [Technologies](#technologies)
   - [Databases](#databases)
@@ -129,6 +127,7 @@ Added [Wireframes](https://github.com/nowane/ecommerce/tree/main/docs/wireframes
 
 [Back to table of content](#table-of-content)
 
+---
 
   #### Database schema
 
@@ -194,9 +193,6 @@ Added [Wireframes](https://github.com/nowane/ecommerce/tree/main/docs/wireframes
     - '+'  and '-' button to increase/decrease quantity
     - A link to go back to the products page.
     - A link witht he option to add the product to the shopping bag.
-
-
-
 
 
 [Back to table of content](#table-of-content)
