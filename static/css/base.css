@@ -323,7 +323,7 @@ hr {
 /* BACKGROUND */
 
 body {
-	background: url('/media/background.png') no-repeat center center fixed;
+	background: #1a213f;
 	background-size: cover;
     height: calc(100vh - 10px);
 }
