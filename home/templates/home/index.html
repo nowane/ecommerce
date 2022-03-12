@@ -10,7 +10,39 @@
 <div class="bg-overlay"></div>
 <div class="container-fluid h-100 content-container">
     <div class="row h-100 text-center">
-        <div class="col-5 col-md-6"></div>
+        <div class="col-5 col-md-6">
+
+
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../../media/silk-animal1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../../media/silk-animal2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../../media/silk-animal3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+        </div>
+
+
+
         <div class="col-7 col-md-6 my-auto">
             <h1 class="display-3 home-header">Fabrics - for everyone</h1>
         </div>
@@ -27,4 +59,9 @@
     </div>
 </div>
 
+{% endblock %}
+
+{% block extra_js %}
+    {{ block.super }}
+    <script src="{% static 'home/js/carousel.js' %}"></script>
 {% endblock %}
