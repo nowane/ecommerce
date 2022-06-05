@@ -14,15 +14,11 @@
             <div class="col-6 offset-3 offset-md-1 col-md-4 my-auto">
                 <div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
                     <div class="carousel-inner img-shadow img-zoom">
-                        <div class="carousel-item active">
-                            <img src="../media/printed-cotton3.jpg" class="d-block w-100" alt="Printed cotton image">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../media/silk-animal2.jpg" class="d-block w-100" alt="Silk animal image">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../media/silk-floral1.jpg" class="d-block w-100" alt="Silk botanical image">
-                        </div>
+                        {% for image in image_carousel %}
+                            <div class="carousel-item {% if forloop.counter0 == 0 %}active{% endif %}">
+                                <img src="{{ image.image.url }}" alt="{{ image.name }}" class="d-block w-100">
+                            </div> 
+                        {% endfor %}
                     </div>
                 </div>
             </div>
