@@ -37,6 +37,7 @@ A mockup of the project, displaying responsiveness.
 - [Features](#features)
   - [Features implemented](#features-implemented)
     - [Navigation](#navigation)
+    - [Homepage product image overview](#homepage-product-image-overview)
     - [Security](#security)
     - [CRUD functionality](#crud-functionality)
       - [Product information](#product-information)
@@ -147,6 +148,14 @@ Added [Wireframes](https://github.com/nowane/ecommerce/tree/main/docs/wireframes
 
 - An easy back to top button when scolled down.
 
+
+[Back to table of content](#table-of-content)
+
+---
+
+  #### Homepage product image overview
+
+- A carousel at the homepage displaying images of all products on the website.
 
 [Back to table of content](#table-of-content)
 
