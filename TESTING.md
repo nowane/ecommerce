@@ -182,6 +182,16 @@ A mockup of the project, displaying responsiveness.
 
 ---
 
+- cb=gapi.loaded_0?le=scs:232 Uncaught {error: 'idpiframe_initialization_failed', details: 'You have created a new client application that use…i/web/guides/gis-migration) for more information.'}
+details: "You have created a new client application that uses libraries for user authentication or authorization that will soon be deprecated. New clients must use the new libraries instead; existing clients must also migrate before these libraries are deprecated. See the [Migration Guide](https://developers.google.com/identity/gsi/web/guides/gis-migration) for more information."
+error: "idpiframe_initialization_failed"
+
+
+
+[Back to table of content](#table-of-content)
+
+---
+
 ## Documentation of any open bugs and other things
 
 - Aware of the fact products.json got commited to GitHub - no user information was committed to GitHub.

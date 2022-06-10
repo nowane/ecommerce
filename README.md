@@ -650,8 +650,9 @@ AWS_SECRET_ACCESS_KEY
 
 - [noimage.png](https://commons.wikimedia.org/wiki/File:No-image-available.png) - Used with this linking to the license.
 
-- https://www.intricatecloud.io/2019/07/adding-google-sign-in-to-your-webapp-pt-1/ - Used as a guide for adding Google log-in authentication.
-https://developers.google.com/identity/sign-in/web/sign-in - Used as a guide for adding Google log-in authentication.
+- [Walkthrough Video](https://www.intricatecloud.io/2019/07/adding-google-sign-in-to-your-webapp-pt-1/) - Used as a guide for adding Google log-in authentication.
+- [Walkthrough Guide](https://developers.google.com/identity/sign-in/web/sign-in) - Used as a guide for adding Google log-in authentication.
+- [New Google Auth Migration Guide](https://developers.google.com/identity/gsi/web/guides/gis-migration) - Guide for migrating to the new Google auth system
 
 
 [Back to table of content](#table-of-content)
