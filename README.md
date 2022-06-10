@@ -38,6 +38,7 @@ A mockup of the project, displaying responsiveness.
   - [Features implemented](#features-implemented)
     - [Navigation](#navigation)
     - [Homepage product image overview](#homepage-product-image-overview)
+    - [Google log-in authentication](#google-log-in-authentication)
     - [Security](#security)
     - [CRUD functionality](#crud-functionality)
       - [Product information](#product-information)
@@ -156,6 +157,14 @@ Added [Wireframes](https://github.com/nowane/ecommerce/tree/main/docs/wireframes
   #### Homepage product image overview
 
 - A carousel at the homepage displaying images of all products on the website.
+
+[Back to table of content](#table-of-content)
+
+---
+
+#### Google log-in authentication
+
+- Users which are not yet registered are able to log in easily with an existing google account.
 
 [Back to table of content](#table-of-content)
 
@@ -640,6 +649,9 @@ AWS_SECRET_ACCESS_KEY
 ## Credits
 
 - [noimage.png](https://commons.wikimedia.org/wiki/File:No-image-available.png) - Used with this linking to the license.
+
+- https://www.intricatecloud.io/2019/07/adding-google-sign-in-to-your-webapp-pt-1/ - Used as a guide for adding Google log-in authentication.
+https://developers.google.com/identity/sign-in/web/sign-in - Used as a guide for adding Google log-in authentication.
 
 
 [Back to table of content](#table-of-content)
