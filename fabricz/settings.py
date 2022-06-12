@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get("DEVELOPMENT", False)
+DEBUG = os.environ.get("DEVELOPMENT", True)
 
 ALLOWED_HOSTS = ['fabricz.herokuapp.com', 'localhost']
 
