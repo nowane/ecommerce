@@ -151,7 +151,7 @@ A mockup of the project, displaying responsiveness.
 
 - When adding a product in the card with a quantity if less than 1 metre, the following error occurs.
 
-![Error](media/testing/add-to-bag-error.png)
+![Error](media/testing/images/add-to-bag-error.png)
 
 - ~~Solved by using float() instead if int() to be able to use a decimal value.~~ 
 
