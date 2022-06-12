@@ -124,7 +124,7 @@ LOGIN_REDIRECT_URL = '/'
 WSGI_APPLICATION = 'fabricz.wsgi.application'
 
 
-## Google Authentication
+# Google Authentication
 SOCIALACCOUNT_PROVIDERS = {
     'google': {
         'SCOPE': [
@@ -133,6 +133,7 @@ SOCIALACCOUNT_PROVIDERS = {
         ],
         'AUTH_PARAMS': {
             'access_type': 'online',
+            'redirect_uri': 'https://fabricz.herokuapp.com/accounts/login/',
         }
     }
 }
