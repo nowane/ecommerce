@@ -133,7 +133,6 @@ SOCIALACCOUNT_PROVIDERS = {
         ],
         'AUTH_PARAMS': {
             'access_type': 'online',
-            'redirect_uri': 'https://fabricz.herokuapp.com/accounts/login/',
         }
     }
 }
