@@ -16,7 +16,6 @@
         <link rel="apple-touch-icon" sizes="180x180" href="{{ MEDIA_URL }}favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="{{ MEDIA_URL }}favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="{{ MEDIA_URL }}favicon/favicon-16x16.png">
-        <meta name="google-signin-client_id" content="250105660263-47apj0ep4673imdfonj35krr1fsldr30.apps.googleusercontent.com">
     {% endblock %}
 
     {% block corecss %}
@@ -39,7 +38,8 @@
     {% block corejs %}
         <!-- Jquery -->    
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script src="https://apis.google.com/js/platform.js" async defer></script>    
+        <!-- Google authentication script -->
+        <script src="https://accounts.google.com/gsi/client" async defer></script>   
     {% endblock %}
 
     <title>FabricZ - {% block extra_title %}{% endblock %}</title>

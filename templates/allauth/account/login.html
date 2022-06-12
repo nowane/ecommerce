@@ -13,13 +13,17 @@
 {% get_providers as socialaccount_providers %}
 
 {% if socialaccount_providers %}
-    <p class="text-blue">{% blocktrans with site.name as site_name %}Please sign in with one
-    of your existing third party accounts. Or, <a href="{{ signup_url }}">sign up</a>
-    for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
+    <p class="text-blue">{% blocktrans with site.name as site_name %}Please sign in with your {{ site_name }} account or Google account below. 
+        If you don't have an account yet, please <a href="{{ signup_url }}">sign up</a> here. {% endblocktrans %}</p>
 
     <div class="socialaccount_ballot">
 
-        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <div id="g_id_onload"
+            data-client_id="250105660263-47apj0ep4673imdfonj35krr1fsldr30.apps.googleusercontent.com"
+            data-ux_mode="redirect"
+            data-login_uri="https://fabricz.herokuapp.com/accounts/login/">
+        </div>
+        <div class="g_id_signin" data-type="standard"></div>
 
         <div class="login-or">{% trans 'or' %}</div>
 
