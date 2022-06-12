@@ -43,14 +43,12 @@ A mockup of the project, displaying responsiveness.
 
 > This is the added score of the Google DevTools Lighthouse performance for desktop.
 
-![Lighthouse results desktop](---------------------------------------)
 
 [Back to table of content](#table-of-content)
 
 
 > - This is the added score of the Google DevTools Lighthouse performance for mobile.
 
-![Lighthouse results desktop](----------------------------------------)
 
 [Back to table of content](#table-of-content)
 
@@ -62,7 +60,6 @@ A mockup of the project, displaying responsiveness.
 
 > Code validated using https://validator.w3.org/ .
 
-![Validation](----------------------------------------)
 
 [Back to table of content](#table-of-content)
 
@@ -72,7 +69,6 @@ A mockup of the project, displaying responsiveness.
 
 > Code validated using https://jigsaw.w3.org/css-validator/ .
 
-![Validation](----------------------------------------)
 
 [Back to table of content](#table-of-content)
 
@@ -81,8 +77,6 @@ A mockup of the project, displaying responsiveness.
 ### Javascript
 
 > Code validated using https://jshint.com/ .
-
-![Validation](----------------------------------------)
 
 > ES6 was used. 
 
@@ -94,11 +88,6 @@ A mockup of the project, displaying responsiveness.
 ### Python
 
 > Code validated using http://pep8online.com/ .
-
-![Validation]((----------------------------------------))
-
-![Validation]((----------------------------------------))
-
 
 
 [Back to table of content](#table-of-content)
@@ -135,17 +124,17 @@ A mockup of the project, displaying responsiveness.
 
 - When trying to add the logo to the navigation bar, the image gave a 404 error.
 
-![Error](media/testing/logo-error-1.png)
+![Error](media/testing/images/logo-error-1.png)
 
 - This was resolved by adding the 'django.template.context_processors.media',  to the templates in settings.py
 
-![Solution](media/testing/logo-error-solve.png)
+![Solution](media/testing/images/logo-error-solve.png)
 
 [Back to table of content](#table-of-content)
 
 - After the site was deployed to Heroku, and all static files got to run via Amazons S3 Bucket, the local site gave 404-errors when loading CSS and JS links. The deployed website however functioned as intended. 
 
-![Error](media/testing/local-css-404.png)
+![Error](media/testing/images/local-css-404.png)
 
 - Checked for typo's in links / checked file paths [like suggested here](https://stackoverflow.com/questions/48248832/stylesheet-not-loaded-because-of-mime-type)
 - Tried adding `<base href="/">` in the head before any styling links, like suggested here and at other sites as well.
@@ -168,25 +157,15 @@ A mockup of the project, displaying responsiveness.
 
 - After adjusting the contexts.py file to iterate through and show the bag items, the following error occured because of different operand types used.
 
-![Error](media/testing/float-decimal-error-1.png)
+![Error](media/testing/images/float-decimal-error-1.png)
 
-![Error](media/testing/float-decimal-error-2.png)
+![Error](media/testing/images/float-decimal-error-2.png)
 
 - Solved by making `quantity = Decimal(request.POST.get('quantity'))` in views.py and `total += Decimal(quantity) * product.price` in contexts.py. 
 
 - However when adding to bag the following error occured: "TypeError at /bag/add/1/ Object of type Decimal is not JSON serializable".
 
-![Error](media/testing/json-serialize.png)
-
-[Back to table of content](#table-of-content)
-
----
-
-- cb=gapi.loaded_0?le=scs:232 Uncaught {error: 'idpiframe_initialization_failed', details: 'You have created a new client application that use…i/web/guides/gis-migration) for more information.'}
-details: "You have created a new client application that uses libraries for user authentication or authorization that will soon be deprecated. New clients must use the new libraries instead; existing clients must also migrate before these libraries are deprecated. See the [Migration Guide](https://developers.google.com/identity/gsi/web/guides/gis-migration) for more information."
-error: "idpiframe_initialization_failed"
-
-
+![Error](media/testing/images/json-serialize.png)
 
 [Back to table of content](#table-of-content)
 
@@ -195,6 +174,13 @@ error: "idpiframe_initialization_failed"
 ## Documentation of any open bugs and other things
 
 - Aware of the fact products.json got commited to GitHub - no user information was committed to GitHub.
+
+- Uncaught {error: 'idpiframe_initialization_failed', details: 'You have created a new client application that use…i/web/guides/gis-migration) for more information.'}
+details: "You have created a new client application that uses libraries for user authentication or authorization that will soon be deprecated. New clients must use the new libraries instead; existing clients must also migrate before these libraries are deprecated. See the [Migration Guide](https://developers.google.com/identity/gsi/web/guides/gis-migration) for more information."
+error: "idpiframe_initialization_failed"
+
+- The Google login functionality is not yet functional due to the following error:
+    "Forbidden (403) - CSRF verification failed. Request aborted."
 
 
 [Back to table of content](#table-of-content)
