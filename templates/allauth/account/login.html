@@ -2,6 +2,7 @@
 
 {% load i18n %}
 {% load account socialaccount %}
+{% load socialaccount %}
 
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
@@ -21,7 +22,9 @@
         <div id="g_id_onload"
             data-client_id="250105660263-47apj0ep4673imdfonj35krr1fsldr30.apps.googleusercontent.com"
             data-ux_mode="popup"
-            data-login_uri="https://fabricz.herokuapp.com/accounts/login/">
+            data-login_uri="https://fabricz.herokuapp.com/accounts/login/"
+            data-callback="handleCredentialResponse"
+            data-auto_select="true">
         </div>
         <div class="g_id_signin"
             data-type="standard"
@@ -57,3 +60,18 @@
 </form>
 
 {% endblock %}
+
+<script>
+    function handleCredentialResponse(response) {
+       // decodeJwtResponse() is a custom function defined by you
+       // to decode the credential response.
+       const responsePayload = decodeJwtResponse(response.credential);
+  
+       console.log("ID: " + responsePayload.sub);
+       console.log('Full Name: ' + responsePayload.name);
+       console.log('Given Name: ' + responsePayload.given_name);
+       console.log('Family Name: ' + responsePayload.family_name);
+       console.log("Image URL: " + responsePayload.picture);
+       console.log("Email: " + responsePayload.email);
+    }
+  </script>
